@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <!--<meta name="viewport" content="width=device-width">-->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+  <div class="container bly-map">
+    <div class="corner-tl"></div>
+    <div class="corner-br"></div>
+	<div id="brand"></div>
+    <div class="content">
+      <div id="map-canvas" class="slide map" style="display:block"></div>
+      <div id="map-controls">
+        </div>
+    </div>
+    
+     <a href="#" class="view-nav">
+      <i></i><i></i><i></i>
+    </a>
+
+    <nav id="nav">
+      <h1>Menu</h1>
+      <ul class="primary">
+        <li><a>Flavors</a>
+          <ul>
+            <li><a hef="#">French Vanilla</a></li>
+            <li><a hef="#">French Vanilla, Fat Free</a></li>
+            <li><a hef="#">Hazelnut</a></li>
+            <li><a hef="#">Caramel</a></li>
+            <li><a hef="#">The Original Irish Cream</a></li>
+            <li><a hef="#">The Original Irish Cream Fat Free</a></li>
+            <li><a hef="#">Creme Brulee</a></li>
+            <li><a hef="#">Toffee Almond Creme</a></li>
+            <li><a hef="#">Latte Macchiato</a></li>
+            <li><a hef="#">Triple Sweet Creme</a></li>
+            <li><a hef="#">Brown Butter Peacan</a></li>
+            <li><a hef="#">Baileys Mudslide</a></li>
+            <li><a hef="#">Vanilla Brown Sugar</a></li>
+            <li><a hef="#">White Chocolate Respberry</a></li>
+          </ul>
+        </li>
+        <li><a>Recipes</a></li>
+        <li><a>FAQs</a></li>
+        <li><a>Where to Buy</a></li>
+      </ul>
+      <ul class="social">
+        <li><a class="facebook">Bailey's Creamers on Facebook</a></li>
+        <li><a class="twitter">Bailey's Creamers on Twitter</a></li>
+      </ul>
+	</nav>
+
+  </div>
+
+  <script src="js/vendor/jquery-1.10.1.min.js"></script>
+  <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2BSVUu0TTTCg9wKt0FzzPS6p_qPAlK_g&sensor=true"></script>
+  <script type="text/javascript">
+	var map;
+	
+	function initialize() {
+	  var mapOptions = {
+		zoom: 16,
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		panControl: true,
+		panControlOptions: {
+			position: google.maps.ControlPosition.LEFT_BOTTOM
+		},
+		zoomControl: true,
+		zoomControlOptions: {
+			style: google.maps.ZoomControlStyle.LARGE,
+			position: google.maps.ControlPosition.LEFT_BOTTOM
+		}
+	  };
+	  map = new google.maps.Map(document.getElementById('map-canvas'),
+		  mapOptions);
+	
+	  // Try HTML5 geolocation
+	  if(navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position) {
+		  var pos = new google.maps.LatLng(position.coords.latitude,
+										   position.coords.longitude);
+	
+		  var infowindow = new google.maps.InfoWindow({
+			map: map,
+			position: pos,
+			content: 'Location found using HTML5.'
+		  });
+	
+		  map.setCenter(pos);
+		}, function() {
+		  handleNoGeolocation(true);
+		});
+	  } else {
+		// Browser doesn't support Geolocation
+		handleNoGeolocation(false);
+	  }
+	}
+	
+	function handleNoGeolocation(errorFlag) {
+	  if (errorFlag) {
+		var content = 'Error: The Geolocation service failed.';
+	  } else {
+		var content = 'Error: Your browser doesn\'t support geolocation.';
+	  }
+	
+	  var options = {
+		map: map,
+		position: new google.maps.LatLng(60, 105),
+		content: content
+	  };
+	
+	  var infowindow = new google.maps.InfoWindow(options);
+	  map.setCenter(options.position);
+	}
+	
+	google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+  <script>
+$(document).ready(function(){
+	smartHeight();
+	$(window).resize(smartHeight);
+	menu();
+	//carousel();
+	//carouselSwipe();
+}); 
+
+/////////////////////////////////////////
+// Smart Height
+/////////////////////////////////////////
+
+function smartHeight() {
+	//$('.container').height($(window).innerHeight());
+	$('.content').height($('.container').height());
+	$('.slide').height($('.content').height());
+}
+
+/////////////////////////////////////////
+// Menu
+/////////////////////////////////////////
+
+var open = false,
+    timer = null;
+
+function menu()
+{
+	$('.view-nav').hover(function() 
+	{
+		if (!open) {
+			timer = setTimeout(function() {
+				$('.view-nav').animate({right: '465px' }, 300);
+				$('.content').animate({left:'-450px', right: '450px' }, 300);	
+				$('#nav').animate({right: '0' }, 300);	
+				open = true;				
+			}, 150);			
+		}
+	});
+	
+	$('.view-nav').click(function(e)
+	{
+		if (!open) 
+		{
+			timer = setTimeout(function() {
+				$('.view-nav').animate({right: '465px' }, 300);
+				$('#nav').animate({right: '0' }, 300);
+				$('.content').animate({left:'-450px', right: '450px' }, 300);	
+				open = true;				
+			}, 150);			
+		}
+		else {
+			timer = setTimeout(function() {
+				$('.view-nav').animate({right: '15px' }, 300);
+				$('#nav').animate({right: '-450px' }, 300);
+				$('.content').animate({left:'0px', right: '0px' }, 300);	
+				open = false;				
+			}, 150);			
+			
+		}
+	});
+	
+	$('.content').hover(function() 
+	{
+		if (open) {
+			$('.view-nav').animate({right: '15px' }, 300);
+			$('#nav').animate({right: '-450px' }, 300);
+			$('.content').animate({left:'0px', right: '0px' }, 300);	
+			open = false;
+		}
+	});	
+	
+	$('.content').click(function() 
+	{
+		if (open) {
+			$('.view-nav').animate({right: '0' }, 300);
+			$('.hero').animate({left: '0' }, 300);				
+			$('nav').animate({right: '-450px' }, 300);
+			open = false;
+		}
+	});
+}
+
+
+/////////////////////////////////////////
+// Carousel
+/////////////////////////////////////////
+
+var currentSlide = 0;
+var newSlide = 1;
+var browserWidth = window.innerWidth;
+
+function carousel() 
+{
+	var $counter = $('.counter'),
+		$counterLis = $('.counter li'),
+		counterWidth = $counterLis.outerWidth(true) * $counterLis.length;
+		
+		console.log($counter, $counterLis);
+		
+	$('.counter a').click(function() {
+		console.log('click');
+		newSlide = $(this).prop('rel');
+		heroSlide('right');
+	});
+
+	$('.slide').eq(currentSlide).show();
+	$counter.width(counterWidth).height(10);
+	
+}
+
+function heroSlide(direction) 
+{
+	//console.log('start slide');
+	if (direction == 'right') {
+		$('.slide').eq(currentSlide).animate({left: (-1 * browserWidth)}, 400);
+		$('.slide').eq(newSlide).css({left: (browserWidth - 60), display : 'block'}).animate({left: 0}, 400, 'swing', function() {
+			$('.counter a').removeClass('active');
+			$('.counter a').eq(newSlide).addClass('active');
+			currentSlide = newSlide;
+			//console.log('end slide');
+		});	
+	}
+	else {		
+		$('.slide').eq(currentSlide).animate({left: ( browserWidth)}, 400);
+		$('.slide').eq(newSlide).css({left: (-1 * (browserWidth)), display : 'block'}).animate({left: 0}, 400, 'swing', function() {
+			$('.counter a').removeClass('active');
+			$('.counter a').eq(newSlide).addClass('active');
+			currentSlide = newSlide;
+			//console.log('end slide');
+		});	
+	}
+}
+
+function carouselSwipe() 
+{
+	$(".content").swipe( {
+		swipeLeft:function(event, direction) {
+			//console.log(direction);
+			newSlide = currentSlide < ($('.counter li').length - 1) ? (currentSlide + 1) : 0;
+			heroSlide('right');
+		},
+		swipeRight:function(event, direction) {
+			//console.log(direction);
+			newSlide = currentSlide > 0 ? (currentSlide - 1) : ($('.counter li').length - 1);
+			heroSlide('left');		
+		},
+		threshold:30, allowPageScroll: 'none'
+	});
+}
+
+/////////////////////////////////////////
+// IE Fix
+/////////////////////////////////////////
+
+document.createElement("article");
+document.createElement("section");
+  </script>
+</body>
+</html>
