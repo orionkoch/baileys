@@ -1,0 +1,461 @@
+body, html{
+	min-width: 980px;
+	min-height: 400px;
+}
+.flavor-page .corner-bl {
+	display:none;
+}
+.flavor-page .heading {
+	background:url(../img/bg_product_heading.png) no-repeat left bottom;
+	color:#f8f8f8;
+	font-size:29px;
+	height:auto;
+	width:auto;
+	line-height:1em;
+	margin:0;
+	padding-bottom:34px;
+	position:static;
+	text-align:left;
+	text-transform:uppercase;
+}
+.flavor-page .heading span {
+	color:#b18f64;
+	display:block;
+	font-size:24px;
+	line-height:1em;
+}
+.product-photo {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: url(../img/TEMP_product_shot3.jpg) center center no-repeat;
+	background-size: cover;
+	z-index: 0;
+	x-display: none;
+}
+.product-desc {
+	position: absolute;
+	top: 14%;
+	width: 26%;
+	right: 32.5%;
+	color:#fff;
+	z-index: 12;
+	min-width: 275px;
+	padding-bottom: 10px;
+	x-background: #243;
+	-webkit-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    -moz-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    -ms-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+     -o-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+        transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.product-desc:hover {
+	top: 13.5%;
+	-webkit-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+   -moz-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    -ms-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+     -o-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+        transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.product-social {
+	width: 20%;
+	position: absolute;
+	bottom: 12%;
+	right: 8%;
+	z-index: 12;
+	min-width: 240px;
+	x-display: none;
+		-webkit-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+   -moz-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    -ms-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+     -o-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+        transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.product-social:hover {
+	bottom: 11.5%;
+	cursor: pointer;
+		-webkit-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+   -moz-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    -ms-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+     -o-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+        transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.border-blue {
+	color:#b1d9fe;
+	display:block;
+	height:32px;
+	background:url(../img/bg_field_styles.png) no-repeat left -34px;
+	line-height:32px;
+	text-decoration:none;
+	padding-left:21px;
+}
+.border-blue span {
+	display:block;
+	height:32px;
+	background:url(../img/bg_field_styles.png) no-repeat right -68px;
+	float: left;
+	padding-right: 21px;
+}
+.border-blue:hover {
+	background-position:left -170px;
+}
+.border-blue:hover span {
+	background-position:right -204px;
+}
+.border-blue.where {
+	background-position:0 0;
+	padding-left:26px;
+}
+.border-blue.where:hover {
+	background-position:0 -136px;
+}
+.btn-view-recipes {
+	position:absolute;
+	left:50px;
+	bottom:80px;
+}
+.product-desc .border-blue {
+	float:left;
+	margin-right:5px;
+}
+.white-rasp-choc-swirl {
+	x-background:url(../img/TEMP_product_shot.png) no-repeat left top;
+}
+.row-social {
+	background:url(../img/bg_separator_dots.png) repeat-x left bottom;
+	padding-bottom:17px;
+	padding-top:12px;
+	position:relative;
+}
+.row-social:last-child {
+	background:none;
+}
+.icon-social {
+	background:url(../img/bg_social_activity.png) no-repeat left top;
+	position:absolute;
+	width:42px;
+	height:42px;
+	top: 10px;
+	left: 0;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+.icon-social:hover {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+}
+
+.icon-social.spotify {
+	background-position:left top;
+}
+.icon-social.pintrest {
+	background-position:left -84px;
+}
+.product-rating .header {
+	color:white;
+	display:block;
+	margin-bottom: 11px;
+}
+.rating-stars {
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+.rating-stars .rateit {
+	display:block;
+	float:left;
+}
+.product-social-activity .row-social {
+	padding-left:53px
+}
+.product-social-activity span {
+	color:#e8d7b2;
+	font-size:16px;
+}
+.product-social-activity p {
+	color:#ffffff;
+	font-size:10px;
+	margin:0;
+}
+.rating-counter {
+	background-color:#4d3943;
+	color:#b76f94;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	display:block;
+	float:right;
+	font-size:20px;
+	font-weight:bold;
+	height:27px;
+	line-height:22px;
+	margin-top:30px;
+	padding:0 10px;
+}
+
+
+.flavor-bar {
+	position:absolute;
+	bottom:-96px;
+	left:50%;
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:912px;
+	margin-left:-456px;
+	z-index:3;
+}
+.flavor-bar .flavor {
+	background:url(../img/bg_flavor_bar.png) no-repeat;
+	width:54px;
+	height:162px;
+	float:left;
+	margin-left:3px;
+	margin-top:50px;
+	transition: margin-top 0.3s ease-in-out;
+	-webkit-transition: margin-top 0.3s ease-in-out;
+}
+.flavor-bar .flavor:first-child {
+	margin-left:0;
+}
+.flavor-bar .flavor:hover {
+	margin-top:0px;
+}
+
+.qtip-baileys {
+	border-width:2px;
+	border-color:#f2bf92;
+	background-color:#2f242a;
+	color:#ececec;
+	padding:10px;
+	font-size:14px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	text-transform:uppercase;
+}
+
+
+/* 
+   Rateit Jquery Plugin Styles
+   -------------------------------------------------------------------------- */
+
+.rateit {
+    display: -moz-inline-box;
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+.rateit .rateit-range
+{
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+    background: url(../img/bg_rating_stars.png) 0 28px;
+    height: 16px;
+    outline: none;
+}
+.rateit .rateit-range * {
+    display:block;
+}
+
+/* for IE 6 */
+* html .rateit, * html .rateit .rateit-range
+{
+    display: inline;
+}
+
+/* for IE 7 */
+* + html .rateit, * + html .rateit .rateit-range
+{
+    display: inline;
+}
+
+.rateit .rateit-hover, .rateit .rateit-selected
+{
+    position: absolute;
+    left: 0px;
+}
+
+.rateit .rateit-hover-rtl, .rateit .rateit-selected-rtl
+{
+    left: auto;
+    right: 0px;
+}
+
+.rateit .rateit-hover
+{
+    background: url(../img/bg_rating_stars.png) left 0;
+}
+
+.rateit .rateit-hover-rtl
+{
+    background-position: right -32px;
+}
+
+.rateit .rateit-selected
+{
+    background: url(../img/bg_rating_stars.png) 0 0;
+}
+
+.rateit .rateit-selected-rtl
+{
+    background-position: right -16px;
+}
+
+.rateit .rateit-preset
+{
+    background: url(../img/bg_rating_stars.png) left 0;
+}
+
+.rateit .rateit-preset-rtl
+{
+    background: url(../img/bg_rating_stars.png) left -48px;
+}
+
+.rateit button.rateit-reset
+{
+    background: url(delete.gif) 0 0;
+    width: 16px;
+    height: 16px;
+    display: -moz-inline-box;
+    display: inline-block;
+    float: left;
+    outline: none;
+    border:none;
+    padding: 0;
+}
+
+.rateit button.rateit-reset:hover, .rateit button.rateit-reset:focus
+{
+    background-position: 0 -16px;
+}
+
+/* 
+   Nutrition Info Popup
+   -------------------------------------------------------------------------- */
+
+.nutrition {
+	color:#594e53;
+	font-size:14px;
+	text-transform:uppercase;
+	position:relative;
+	width:776px; 
+	height:500px;
+	padding:50px;
+}
+.nutr-h1 {
+	color:#b18f62;
+	margin:0;
+	font-size:16px;
+}
+.nutr-h2 {
+	color:#594e54;
+	margin:0;
+	text-transform:uppercase;
+	padding-bottom:20px;
+	background: url(../img/bg_separator_dots.png) repeat-x left bottom;
+	font-size:33px;
+	line-height:1em;
+}
+.nutr-h3 {
+	font-size:14px;
+	color:#b18f64;
+	margin-bottom:0;
+}
+.nutr-col {
+	width:50%;
+	float:left;
+	list-style:none;
+	padding:0;
+}
+.nutr-col li {
+	line-height:1.5em;
+	position:relative;
+}
+.nutr-right {
+	position:absolute;
+	right:0;
+}
+.nutr-left {
+	width:40%;
+	margin-right:9%;
+}
+.nutr-daily-values {
+	text-transform:none;
+	padding-top:20px;
+}
+.nutr-ingredients {
+	background: url(../img/bg_separator_dots.png) repeat-x left top;
+	padding-top:30px;
+	text-transform:none;
+}
+.nutr-note {
+	font-size:13px;
+	position:absolute;
+	right:110px;
+	top:50px;
+}
+.nutr-mass {
+	text-transform:none;
+}
+
+
+/* 
+   Media Queries
+   -------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1230px), screen and (max-height: 813px)
+{
+	/*
+	.product-shot {
+		width:571px;
+		height:456px;
+		margin:-228px 0 0 -285px;
+	}
+	.product-shot img {
+		width:86%;
+	}
+	.product-shot p {
+		margin:7px 0;
+	}
+	.product-shot .border-blue {
+		font-size:11px;
+	}
+	.flavor-page .heading {
+		font-size:24px;
+		background-size:contain;
+		width: 100%;
+	}
+	.product-desc {
+		width:250px;
+	}
+	*/
+}
+@media only screen and (max-width: 1161px)
+{
+	.flavor-page .heading {
+		font-size:20px;
+		background-size: 80%;
+	}
+	.product-desc {
+		font-size: 12px;
+	}
+}
+
+
+/* 
+   IE8 Fixes
+   -------------------------------------------------------------------------- */
+.lt-ie9 .product-photo {
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.brandcontent.com/baileys/img/TEMP_product_shot3.jpg', sizingMethod='scale')";
+}

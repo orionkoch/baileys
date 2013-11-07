@@ -1,0 +1,294 @@
+.recipes .container {
+	background-color:#392727;
+}
+.recipes header {
+	margin: 4% 0 1% 220px;
+}
+.recipes .heading {
+	position:static;
+	float: left;
+	font-size:14px;
+	margin: 0 30px 0 0;
+	text-align:left;
+	width:auto;
+}
+/*
+.recipes .content {
+	position: static;
+	margin-top: 2%;
+	height: 84%;
+}
+*/
+.recipes .content {
+	bottom:0;
+	top: 25%;
+	margin: 0 5%;
+	width: 90%;
+}
+/* .content-scroll
+ * Need a container with a height set on it
+ * in order to get the content to scroll
+ */
+.recipes .content-scroll {
+	height:100%;
+}
+
+
+.recipes-lead {
+	color:#fff;
+	float: left;
+	font-size:13px;
+	margin-top: 24px;
+	width: 25em;
+}
+.recipes-reminder {
+	position: absolute;
+	width: 102px;
+	height: 102px;
+	top: 40px;
+	right: 60px;
+}
+.border-bar {
+	height: .75em;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	background: #231f20;
+	display: block;
+	width: 100%;
+}
+.fader-box {
+	x-background:url(../img/gradient_fade.png) repeat-x;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM5MjcyNyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg5JSIgc3RvcC1jb2xvcj0iIzM5MjcyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzOTI3MjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(57,39,39,0) 0%, rgba(57,39,39,1) 89%, rgba(57,39,39,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(57,39,39,0)), color-stop(89%,rgba(57,39,39,1)), color-stop(100%,rgba(57,39,39,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(57,39,39,0) 0%,rgba(57,39,39,1) 89%,rgba(57,39,39,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(57,39,39,0) 0%,rgba(57,39,39,1) 89%,rgba(57,39,39,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(57,39,39,0) 0%,rgba(57,39,39,1) 89%,rgba(57,39,39,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(57,39,39,0) 0%,rgba(57,39,39,1) 89%,rgba(57,39,39,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00392727', endColorstr='#392727',GradientType=0 ); /* IE6-8 */
+}
+.gallery-controls {
+	margin: 1em auto 1em 2%;
+	line-height: 2em;
+}
+.gallery-controls .col, .gallery-controls legend  {
+	float: left;
+	margin-right: 1em;
+}
+.gallery-controls .col.blue-dots {
+	background: url("../img/bg_recipes_controls.png") no-repeat left -48px;
+	padding-left:30px;
+}
+.gallery-controls legend {
+	color:#ddd1c6;
+	text-transform:uppercase;
+}
+.gallery-controls label {
+	color:#a3cffe;
+	margin-right: 10px;
+}
+
+
+/* 
+   Gallery Control Styles
+   -------------------------------------------------------------------------- */
+.checkbox, select-box {
+	display: -moz-inline-box;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+	/* Keeping this as :focus to remove browser styles */ 
+	position: relative;
+	margin:0 5px 0 0;
+	padding:0;
+}
+.checkbox input {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	border: none;
+	background: none;
+	display: -moz-inline-box;
+	display: inline-block;
+	zoom: 1;
+	text-align: center;
+}
+.checkbox span, .select-box-selection {
+	background: url("../img/bg_recipes_controls.png") no-repeat 0 0;
+	-webkit-font-smoothing: antialiased; 
+	display: -moz-inline-box;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	text-align: center;
+}
+.checkbox:focus, select-box:focus {
+	outline: 0; 
+}
+.checkbox, .checkbox span {
+	width: 21px;
+	height: 17px; 
+}
+.checkbox span.checked {
+	background-position: 0 -17px; 
+}
+/*
+.select-box {
+	position:relative;
+}
+.select-box-selection {
+	background-position:97% -81px;
+	border: 2px solid #a3cffe;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	color: #a3cffe;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 1em;
+	min-width: 20em;
+	text-align:left;
+}
+.select-box-options {
+	background: black;
+	border: 2px solid #a3cffe;
+	border-top: 0 none;
+	border-radius: 0 0 15px 15px;
+	-webkit-border-radius: 0 0 15px 15px;
+	-moz-border-radius: 0 0 15px 15px;
+	cursor: pointer;
+	display:none;
+	left: 0;
+	list-style: none outside;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-transform: uppercase;
+	z-index: 10;
+}
+.select-box-options .option {
+	border-top: 1px dotted #95aec9;
+	color: #a3cffe;
+	height:100%;
+	padding:0.35em 1.3em
+}
+*/
+/* Common form control styles */
+/*
+.selector, .selector span {
+	background: url("../img/bg_map_controls.png") no-repeat;
+	-webkit-font-smoothing: antialiased; 
+}
+*/
+.selector {
+	display: -moz-inline-box;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+	/* Keeping this as :focus to remove browser styles */ 
+	margin: 0;
+	padding: 0; 
+}
+.selector:focus {
+	outline: 0; 
+}
+.selector {
+	padding: 0 0 0 12px;
+	position: relative;
+	overflow: hidden;
+}
+.selector span {
+	background: url("../img/bg_recipes_controls.png") no-repeat 95% -81px;
+	border: 2px solid #a3cffe;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	text-overflow: ellipsis;
+	color:#a3cffe;
+	cursor: pointer;
+	display: block; 
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 0 43px 0 15px;
+	text-transform:uppercase;
+}
+.selector select {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	border: none;
+	x-background: none;
+	position: absolute;
+	height: 25px;
+	top: 4px;
+	left: 0px;
+	width: 100%; 
+}
+
+
+
+
+/* 
+   Gallery Item Styles
+   -------------------------------------------------------------------------- */
+.recipes .gallery-container {
+	height: 89%;
+	margin-top:15px;
+	overflow-y: scroll;
+}
+.recipes .content .gallery-flex-row {
+	x-height: 100%;
+	text-align: center;
+}
+.recipes .gallery-item {
+    margin: 0 0.5% 0.5% 0.5%;
+    max-height: 100%;
+    max-width: 380px;
+    min-width: 22%;
+    height: 162px;
+    width: 242.362px;
+    background: none no-repeat scroll center center rgba(0, 0, 0, 0);
+    border: 3px solid #FFFFFF;
+    border-radius: 30px 0 30px 0;
+    display: inline-block;
+    overflow: hidden;
+}
+.recipes .gallery-item-link {
+	position: relative;
+	color: transparent;
+	text-transform: uppercase;
+	height: 100%;
+	width: 100%;
+	display: block;
+	font-weight: bold;
+	font-size:0;
+}
+.recipes .gallery-item-link > span {
+	color:#2f2c26;
+	position: absolute;
+	top: 45%;
+	left: 15%;
+	right: 15%;
+}
+.recipes .gallery-item:hover {
+	border-color: #d6ba84;
+}
+.recipes .gallery-item:hover .gallery-item-link {
+	color:#000000;
+	background: rgba(255,255,255,.5);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF)"; /* IE8 */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF);   /* IE6 & 7 */
+	font-size:1em;
+	zoom: 1;
+}
+

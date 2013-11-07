@@ -36,6 +36,7 @@ hr {
 
 img {
     vertical-align: middle;
+    max-width: 100%;
 }
 
 fieldset {
@@ -70,6 +71,9 @@ body {
 	border:0;
 	padding:0;
 }
+body {
+	font-family:neutrafaceText-book_alt, Arial, Helvetica, sans-serif;
+}
 .border {
 	position:absolute;
 	top:0;
@@ -83,13 +87,17 @@ body {
 	z-index:1;
 }
 #brand {
+	display:block;
 	position:absolute;
 	top:-195px;
-	left:60px;
+	left:4%;
 	z-index:5;
 	width:150px;
 	height:210px;
 	background:url(../img/logo.png) no-repeat;
+}
+#brand:hover {
+	top:-190px;
 }
 .container {
 	background-color:#282828;
@@ -98,13 +106,6 @@ body {
 	width:100%;
 	height:100%;
 	z-index:2;
-}
-#overlay {
-	background-color:#292929;
-	height:100%;
-	position:absolute;
-	width:100%;
-	z-index:4;
 }
 .intro-logo {
 	display:none;
@@ -127,7 +128,7 @@ body {
 	position:absolute;
 	width:219px;
 	height:186px;
-	background:url(../img/corner_top_left.png) no-repeat;
+	background:url(../img/bg_corners.png) no-repeat;
 	left: -34px;
 	top: 14px;
 	z-index:3;
@@ -136,10 +137,50 @@ body {
 	position:absolute;
 	width:186px;
 	height:186px;
-	background:url(../img/corner_bottom_right.png) right bottom no-repeat;
+	background:url(../img/bg_corners.png) right bottom no-repeat;
 	bottom: 42px;
 	right: 14px;
 	z-index:3;
+}
+.corner-bl {
+	position:absolute;
+	width:70px;
+	height:49px;
+	background:url(../img/bg_trademark.png) no-repeat;
+	bottom: 63px;
+	left: 20px;
+	z-index:3;
+}
+.nav-left,
+.nav-right {
+	position:absolute;
+	width:30px;
+	height:60px;
+	top:50%;
+	margin-top:-30px;
+	background:url(../img/bg_arrow_nav.png) no-repeat;
+	z-index:6;
+	display:none;
+	opacity:0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.nav-left {
+	left:25px;
+	background-position:0 2px;
+}
+.nav-right {
+	right:40px;
+	background-position:0 -58px;
+}
+.nav-left:hover {
+	background-position:0 -118px;
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.nav-right:hover {
+	background-position:0 -180px;
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 .legal {
 	position: absolute;
@@ -149,55 +190,121 @@ body {
 .legal p {
 	padding:0;
 	margin:0;
-	font-size: 9px;
+	font-size: 8px;
 	color:#8b8b8b;
 	text-align:right;
+	text-transform:uppercase;
 }
-.logo {
+.heading {
+	background:url(../img/bg_heading.png) no-repeat center bottom;
+	color:#b6a170;
+	font-size:20px;
+	line-height:1.6em;
+	width:400px;
+	x-height:108px;
+	text-align:center;
+	position:absolute;
+	top:7%;
+	left:50%;
+	margin-left:-200px;
+	padding-bottom:35px;
+	text-transform:uppercase;
+}
+/*
+.heading {
+	background:url(../img/bg_heading.png) no-repeat center bottom;
+	color:#b6a170;
+	font-size:20px;
+	line-height:1em;
 	width:300px;
-	height:150px;
+	height:108px;
 	margin:80px auto 60px;
-	background-color:#ccc;
+	text-align:center;
+}
+*/
+.heading span {
+	color:#fff;
+	display:block;
+	line-height:1em;
+	font-size:35px;
+	font-family:neutrafaceText-bold_alt, neutrafaceText-book_alt, Arial, Helvetica, sans-serif;
 }
 .content {
+	color:#dac7a2;
+	font-size:13px;
+	position:absolute;
+	top:36%;
+	bottom:50px;
+	width:84%;
+	margin:0 8%;
+}
+/*
+.content {
+	color:#dac7a2;
+	font-size:13px;
 	position:absolute;
 	top:290px;
 	bottom:50px;
 	width:84%;
 	margin:0 8%;
-	background-color:#ccc;
-	overflow-y:scroll;
+	x-overflow-y:scroll;
 }
-
-
-/* 
-   Slide Content Styles
-   -------------------------------------------------------------------------- */
-.one {
-	background:#39F;
+*/
+h2 {
+	color:#f9f6f0;
+	font-size:20px;
+	margin-top:0;
 }
-.two{
-	background:#C33
+.content-img-right {
+	float:right;
+	margin:0 0 0 65px;
 }
-.three {
-	background:#F90;
+.social-links {
+	margin-top:28px;
 }
-#map-canvas {
-	position:relative;
+.social-links a {
+	color: #52b4ff;
+	display:block;
+	background: url(../img/bg_social_links.png) no-repeat;
+	padding: 0 0 0 30px;
+	line-height: 21px;
+	margin-bottom:10px;
+	text-decoration:none;
+	text-transform:uppercase;
 }
-#map-controls {
-	position:absolute;
-	bottom:0px;
-	right:0px;
-	background:black;
-	width:351px;
-	height:423px;
-	z-index:9999;
-	color:white;
-	background:url(../img/controls.png) no-repeat;
+.social-links .twitter {
+	background-position: left -32px;
 }
-.bly-map .corner-br {
-	display:none;
+.fadeIn,
+.heading {
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.center-container {
+  position: relative;
+}
+.absolute-center {
+	width: 74%;
+	height: 40%;
+	x-overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+.absolute-center.is-right {
+	left: auto; right: 20px;
+	text-align: right;
+}
+.absolute-center.is-left {
+	right: auto; left: 20px;
+	text-align: left;
+}
+.absolute-center.is-bottom {
+	top: auto; bottom: 0;
+}
+.absolute-center.is-fixed {
+	position: fixed;
+	z-index: 999;
 }
 
 	
@@ -353,7 +460,7 @@ a:hover{
 
 nav .secondary {
 	position: absolute;
-	bottom: 50px;
+	bottom: 80px;
 }
 nav .secondary li {
 	float:left;
@@ -369,35 +476,77 @@ nav .secondary a:hover {
 
 nav .menu_two{
 	position: absolute;
-	bottom: 160px;
+	bottom: 170px;
 }
-
 nav .menu_two a:hover{
 	color:#a3cffe;
 }
 
 nav .social {
 	position: absolute;
-	bottom: 80px;
+	bottom: 120px;
 }
 nav .social li {
 	margin-bottom:4px;
 }
-nav .social a {
-	color:#5c7faa;
-	background:url(../img/social.png) no-repeat;
-	padding:0 0 0px 30px;
-	line-height:25px;
-	font-size: 11px;
+nav .canada_link {
+	display:block;
+	position: absolute;
+	bottom: 60px;
+	padding-left:30px;
+	background:url(../img/bg_canada.png) no-repeat 0 0;
+	line-height:1em;
+	text-transform:uppercase;
+	font-size:11px;
+	color: #8b8b8b;
+	right:103px;
 }
-nav .social a:hover {
+nav .canada_link:hover {
 	color:#fff;
+	background-position:0 -13px
 }
-nav .social .facebook {
-	background-position:left 2px;
+
+/* 
+   Social Links
+   -------------------------------------------------------------------------- */
+.social a {
+	color:#5c7faa;
+	background:url(../img/social.png) no-repeat center center;
+	float:left;
+	margin:5px 17px 0px 0;
+	padding-top:5px;
+	width:25px;
+	height:25px;
+		-webkit-transition: margin-top 200ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+   -moz-transition: margin-top 200ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -ms-transition: margin-top 200ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+     -o-transition: margin-top 200ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+        transition: margin-top 200ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+
 }
-nav .social .twitter {
-	background-position:left -24px;
+.social a:hover {
+	margin-top:2px;
+}
+.social .facebook {
+	background-position:0 0;
+}
+.social .twitter {
+	background-position:-45px 0;
+}
+.social .pintrest {
+	background-position:-87px 0;
+}
+.social .instagram {
+	background-position:-126px 0;
+}
+.social-share-button {
+	background:url(../img/btn_product_social.png) no-repeat left top;
+	display:block;
+	width:223px;
+	height:40px;
+}
+.social-share-button:hover {
+	background-position:left -40px;
 }
 
 
@@ -409,7 +558,6 @@ nav .social .twitter {
 }
 
 .txt-site-search {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border:2px solid #fff;
 	color:white;
 	font-size:20px;
@@ -470,6 +618,46 @@ h2.site-search-h2 {
 .site-search-results a:hover {
 	color:white;
 }
+
+
+/* 
+   Tabs - base styles
+   -------------------------------------------------------------------------- */
+.tabs {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.tabs li {
+	display:inline-block;
+}
+.tabs a {
+	x-padding: 20px 20px 10px 20px;
+	padding: 0 20px 0 20px;
+	display: block;
+	color: #a1a1a1;
+	text-decoration: none;
+	font-size:20px;
+}
+.tabs .active a {
+	color:#fff;
+}
+.tab {
+	border:3px solid #4b3d3b;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	border-bottom: 0;
+}
+.tab-content {
+	padding:20px;
+	border:3px solid #736d66;
+	-webkit-border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	border-radius: 0px 20px 20px 20px;
+	display:none;
+}
+
 /* 
    Bullet nav at the bottom
    -------------------------------------------------------------------------- */
@@ -503,6 +691,154 @@ h2.site-search-h2 {
 	background-color:#aaa;
 }
 
+
+/* 
+   Modal Styles - Base Styles
+   -------------------------------------------------------------------------- */
+#modal-overlay {
+    position: absolute;;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+.modal-box {
+	display:none;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	position: relative;
+	margin: 0 auto;
+	top: 50%;
+	left:50%;
+	z-index: 101;
+	background: lightgray;
+	display: inline-block;
+	cursor: default;
+}
+.modal-box .close-box {
+	background: url(../img/bg_dialog_close.png) no-repeat;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	font-size: 100px;
+	display: block;
+	line-height: 0px;
+	height: 24px;
+	width: 24px;
+	cursor: pointer;
+}
+/* 
+   Modal Styles - Social Share
+   -------------------------------------------------------------------------- */
+.social-share {
+	padding:60px;
+	width:705px;
+	height:235px;
+}
+.social-share .social-link {
+	color:#594e54;
+	display:block;
+	float:left;
+	width:175px;
+	height:175px;
+	x-padding:30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family: neutrafaceText-bold_alt, neutrafaceText-book_alt, Arial, Helvetica, sans-serif;
+	padding: 10px;
+	margin:20px;
+	background-color: #fff;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+.social-link span {
+	display:block;
+	text-align:center;
+	padding:20px 0;
+}
+/* 
+   Modal Styles - Leaving Site
+   -------------------------------------------------------------------------- */
+.leaving-site {
+	border: 3px solid #dda97a;
+	background: #d1c5ba;
+	padding:28px;
+	width: 480px;
+	text-align: left;
+	top:0;
+	left:0;
+}
+.leaving-site .close-link,
+.leaving-site h2,
+.leaving-site h3 {
+	font-family:neutrafaceText-bold_alt, neutrafaceText-book_alt, Arial, Helvetica, sans-serif;
+}
+.leaving-site h2,
+.leaving-site .close-link {
+	color:#000;
+	text-transform:uppercase;		
+}
+.leaving-site h3 {
+	margin:0;
+}
+.leaving-site .close-link {
+	text-decoration:none;
+	line-height:38px;
+}
+.leaving-site .continue-link {
+	background: #793b46;
+	color: white;
+	float: right;
+	font-size:20px;
+	line-height:38px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	padding:0 15px;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+
+/* ==========================================================================
+   Web Fonts
+   ========================================================================== */
+/*This CSS resource incorporates links to web font and font software which is
+the valuable copyrighted property of House Industries and/or its suppliers. You
+expressly agree to not copy, install, redistribute, convert, modify, or reverse
+engineer this font software. Please contact House Industries with any questions
+regarding Web Fonts: http://www.houseind.com*/
+
+@font-face {
+	font-family:'neutrafaceText-book_alt';
+	src: url('../webfonts/NeutrafaceText-Book_Alt.eot') format('eot'),
+		 url('../webfonts/NeutrafaceText-Book_Alt.woff') format('woff'),
+		 url('../webfonts/NeutrafaceText-Book_Alt.ttf') format('truetype');
+}
+
+@font-face {
+	font-family:'neutrafaceText-bold_alt';
+	src: url('../webfonts/NeutrafaceText-Bold_Alt.eot') format('eot'),
+		 url('../webfonts/NeutrafaceText-Bold_Alt.woff') format('woff'),
+		 url('../webfonts/NeutrafaceText-Bold_Alt.ttf') format('truetype');
+}
+
+/* ==========================================================================
+   Reset Styles
+   ========================================================================== */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -517,6 +853,16 @@ h2.site-search-h2 {
        (min-resolution: 120dpi) {
 
 }
+@media only screen and (max-height: 768px) {
+
+
+}
+@media only screen and (min-width: 1195px) {
+	.promo1-links {
+		width: 732px;
+	}
+}
+
 
 /* ==========================================================================
    Helper classes

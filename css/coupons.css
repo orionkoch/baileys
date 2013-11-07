@@ -1,0 +1,62 @@
+.coupons .constrain {
+	width:500px;
+}
+.coupons .content h1,
+.coupons .content h2 {
+	color:#fff;
+	text-transform:uppercase;
+}
+.coupons .content h1 {
+	font-size: 35px;
+}
+.coupons .content h2 {
+	line-height:1em;
+	margin:0;
+}
+.coupons .content h1,
+.coupons .content h2,
+.coupons #email-signup legend {
+	font-family:neutrafaceText-bold_alt, neutrafaceText-book_alt, Arial, Helvetica, sans-serif;
+}
+.coupons input[type="text"] {
+	max-width: 50%;
+	min-width: 13em;
+	border: 1px inset #666;
+	background: #1f1f1f;
+	color: #e0e0e0;
+	resize: none;
+	border-radius: .5em;
+	-webkit-border-radius: .5em;
+	-ms-border-radius: .5em;
+	background-clip: border-box;
+	height: 2em;
+	line-height: 2;
+	padding: 0 .5em;
+	margin-right: .25em;
+}
+.coupons #email-signup {
+	clear:left;
+	padding-top:20px;
+}
+.coupons #email-signup legend {
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.coupons #email-signup input[type=submit] {
+	background: #3b5c6d;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-ms-border-radius: 20px;
+	text-transform: uppercase;
+	border: none;
+	margin: 0;
+	color: #fff;
+	padding: 7px 20px;
+	line-height: 2em;
+	padding: 0 20px;
+}
+.coupons #email-signup label {
+	color:#fff;
+	text-transform:uppercase;
+}

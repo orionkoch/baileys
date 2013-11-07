@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Baileys</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery.qtip.min.css">
+  <link rel="stylesheet" href="css/flavor.css">
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <style>
+	/*
+	* TEMPORARY STYLES
+	* to be removed in production.
+    * Shows how a flavor is selected in the flavor bar
+	* when a user first gets to a flavor page.
+	*/
+	.flavor.active {
+		margin-top:0px;
+	}
+	/*
+	or use this CSS routing technique.
+	.white-choc-raspberry-swirl .active {
+		margin-top:-30px;
+	}
+	*/
+  </style>
+</head>
+
+<body class="flavor-page white-choc-raspberry-swirl">
+  <div class="border">
+    <div class="corner-tl"></div>
+    <div class="corner-br"></div>
+    <div class="corner-bl"></div>
+	<a href="index.html" id="brand"></a>
+    <a href="#" class="nav-left"></a>
+    <a href="#" class="nav-right"></a>
+    
+    <div class="container">
+
+      <div class="product-photo"></div>
+
+      <div class="product-desc">
+        <h1 class="heading">
+          <span>BAILEYS&reg; COFFEE CREAMERS</span>White Chocolate Raspberry Swirl
+        </h1>
+        <p>Everybody could use a delicious swirl of goodness in their life. 
+          So what did we do? We found the most velvety thing on earth and stirred 
+          it up with the sweetest of berry flavors. Bam. White Chocolate Raspberry Swirl – 
+          straight from our delicious imagination to your cup.
+         </p>
+         <p>Available in 16oz. and 32 oz.</p>
+         <a href="map.html" id="btn-where-to-buy" class="border-blue where"><span>Where to Buy</span></a>
+         <a href="#nutrition-info" id="btn-nutrition-info" class="border-blue"><span>Nutritional Info</span></a>
+      </div>
+
+      <aside class="product-social">
+        <div class="product-rating row-social clearfix">
+          <div class="rating-stars clearfix">
+            <span class="header">Baileys Fan's Flavor Rating</span>
+            <div id="rating-stars" data-productid="123" data-rateit-step="1" data-rateit-resetable="false" data-rateit-ispreset="true"></div>
+          </div>
+          <span class="rating-counter">233</span>
+        </div>
+        <div class="row-social">
+          <a href="#social-share" class="social-share-button"></a>
+        </div>
+        <div class="product-social-activity">
+          <div class="row-social">
+            <div class="icon-social spotify"></div>
+            <span>FPO SOCIAL ACTIVITY 1</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="row-social">
+            <div class="icon-social pintrest"></div>
+            <span>FPO SOCIAL ACTIVITY 2</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+    <!-- end .container -->
+    
+    <ul class="flavor-bar">
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor white-choc-raspberry-swirl active" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+      <li class="flavor vanilla-brown-sugar" data-tooltip="the tooltip"></li>
+    </ul>
+    <!-- end .flavor-bar -->
+
+    <div class="legal">
+    <p>Produced by HP Hood LLC <br />
+       under license from R&A Bailey Co.</p>
+    </div>
+
+    <div id="tabs">
+    
+        <div class="tabs-nav">
+          <a href="#tab-1" class="tab-anchor menu"><span>Menu</span></a>
+          <a href="#tab-2" class="tab-anchor search"><span>Search</span></a>
+        </div>
+
+        <nav id="tab-1" class="tab-panel">
+          <h1>Menu</h1>
+          
+          <h2>Flavors</h2>
+          
+          <div id="nav-clip">
+            <ul class="primary">
+              <li>
+                <ul>
+                  <li><a href="flavor.html">French Vanilla</a></li>
+                  <li><a href="flavor.html">Hazelnut</a></li>
+                  <li><a href="flavor.html">Caramel</a></li>
+                  <li><a href="flavor.html">The Original Irish Cream</a></li>
+                  <li><a href="flavor.html">Creme Brulee</a></li>
+                  <li><a href="flavor.html">Toffee Almond Creme</a></li>
+                  <li><a href="flavor.html">Latte Macchiato</a></li>
+                  <li><a href="flavor.html">Triple Sweet Creme</a></li>
+                  <li><a href="flavor.html">Brown Butter Pecan</a></li>
+                  <li><a href="flavor.html">Baileys Mudslide</a></li>
+                  <li><a href="flavor.html">Vanilla Brown Sugar</a></li>
+                </ul>
+              </li>
+              <li><span class="flavor_labels">Limited Edition</span>
+                <ul>
+                  <li><a href="flavor.html">White Chocolate Raspberry</a></li>
+                </ul>
+              </li>
+              <li><span class="flavor_labels">Fat Free</span>
+                <ul>
+                  <li><a href="flavor.html">French Vanilla, Fat Free</a></li>
+                  <li><a href="flavor.html">The Original Irish Cream Fat Free</a></li>
+                </ul>
+              </li>
+              <li><span class="flavor_labels">Seasonal</span>
+                <ul>
+                  <li><a href="flavor.html">Red Velvet Cupcake</a></li>
+                  <li><a href="flavor.html">White Chocolate Peppermint Bark</a></li>
+                  <li><a href="flavor.html">Pumpkin Spice</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+          <ul class="menu_two">
+	          <li><a href="recipes.html">Recipes</a></li>
+              <li><a href="coupons.html">Coupons</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="map.html">Where to Buy</a></li>
+          </ul>
+          
+          <div class="social clearfix">
+            <a href="https://www.facebook.com/BAILEYSCreamers" class="facebook external-link"></a>
+            <a href="https://twitter.com/share?via=BAILEYScreamers" class="twitter external-link"></a>
+            <a href="http://www.pinterest.com/baileyscreamers/" class="pintrest external-link"></a>
+            <a href="http://instagram.com/baileyscreamers" class="instagram external-link"></a>
+          </div>
+          
+          <ul class="secondary clearfix">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+          
+          <a class="canada_link" href="#">Canadian Products</a>
+          
+        </nav>
+    
+        <div id="tab-2" class="tab-panel">
+          <h1>Search</h1>
+          <form name="search">
+            <input type="text" id="site-search" name="search" class="txt-site-search" placeholder="type search here" />
+            <button class="btn-site-search"></button>
+          </form>
+          <div class="site-search-results">
+            <h2 class="site-search-h2">Results</h2>
+            <ul>
+              <li><a href="flavor.html">Caramel Sugar Cookies</a></li>
+              <li><a href="flavor.html">Creamy Pavlova Meringue Cookies</a></li>
+              <li><a href="flavor.html">BAILEYS White Chocolate Raspberry Sandwich Cookies</a></li>
+              <li><a href="flavor.html">BAILEYS Vanilla Brown Sugar Cookie Bars</a></li>
+              <li><a href="flavor.html">Mint Cookie Pie with Cotton Candy Wisps</a></li>
+              <li><a href="flavor.html">Chocolate Chip Ice Cream Sandwiches</a></li>
+              <li><a href="flavor.html">Sunflower Brittle</a></li>
+            </ul>
+          </div>
+        </div>
+    
+    </div>
+
+  </div>
+  <!-- end .border -->
+  
+  <div id="nutrition-info" class="nutrition modal-box" role="dialog" aria-describedby="social-share" style="display:none;">
+    <span class="close-box"></span>
+    <div class="nutr-note">
+      <strong>CONTAINS</strong>: Milk<br />
+      <strong>SERVINGS PER CONTAINER</strong>: Pint 32, Quart 64<br />
+      <strong>AVAILABLE SIZES</strong>: Pint (16 FL OZ), Quart (32 FL OZ)<br />
+    </div>
+    <h1 class="nutr-h1">White Chocolate Raspberry Swirl</h1>
+    <h2 class="nutr-h2">Nutritional Info</h2>
+    <h3 class="nutr-h3">Serving Size: 1 TBSP (15ML)</h3>
+    <div class="clearfix">
+      <ul class="nutr-col nutr-left">
+        <li>Amount per serving</li>
+        <li><strong>Calories</strong>: 35 <span class="nutr-right"><strong>Calories from Fat</strong>: 15</span></li>
+        <li>&nbsp;<span class="nutr-right">% Daily Values*</span></li>
+        <li><strong>Total Fat</strong>: 1.5<span class="nutr-mass">g</span>	<span class="nutr-right">2%</span></li>
+        <li>&nbsp;&nbsp;Saturated Fat: <span class="nutr-mass">1g</span>	<span class="nutr-right">5%</span></li>
+        <li>&nbsp;&nbsp;Trans Fat: <span class="nutr-mass">0g</span>	 </li>
+        <li><strong>Cholesterol</strong>: <span class="nutr-mass">5mg</span>	<span class="nutr-right">2%</span></li>
+        <li><strong>Sodium</strong>: <span class="nutr-mass">35mg</span>	<span class="nutr-right">2%</span></li>
+      </ul>
+      <ul class="nutr-col">
+        <li><strong>Total Carbohydrate</strong>: <span class="nutr-mass">5g</span>	<span class="nutr-right">2%</span></li>
+        <li>&nbsp;&nbsp;Dietary Fiber: <span class="nutr-mass">0g</span>	<span class="nutr-right">0%</span></li>
+        <li>&nbsp;&nbsp;Sugars: <span class="nutr-mass">5g</span>	 </li>
+        <li><strong>Protein</strong>: <span class="nutr-mass">0g</span>	<span class="nutr-right">0%</span></li>
+        <li><strong>Vitamin A</strong>: 0%	<span class="nutr-right">Vitamin C: 0%</span></li>
+        <li><strong>Calcium</strong>: 0%	<span class="nutr-right">Iron: 0%</span></li>
+        <li><strong>Vitamin D</strong>: 0%	 </li>
+        <li class="nutr-daily-values">* Percent Daily Values are based on a 2,000 calorie diet. Your Daily values may be higher or lower depending on your calorie needs.</li>
+      </ul>
+    </div>
+    <p class="nutr-ingredients">
+      <strong>INGREDIENTS</strong>: Water, Sugar, Cream*, Natural and Artificial Flavors, Disodium Phosphate, Sodium Caseinate, Artificial Color, Salt and Carrageenan.  
+      *Not a significant source of lactose.
+    </p>
+  </div>
+  
+  <div id="social-share" class="social-share modal-box" role="dialog" aria-describedby="social-share" style="display:none">
+    <span class="close-box"></span>
+    <a href="https://twitter.com/share?via=BAILEYScreamers" target="_blank" title="Tweet about this" class="social-link">
+      <img class="social-icon" src="img/social/twitter-bird-300.png" width="175" alt="Twitter" />
+      <span>Tweet</span>
+    </a> 
+    <a href="https://www.facebook.com/BAILEYSCreamers" target="_blank" title="Visit Bailey's Facebook page" class="social-link">
+      <img class="social-icon" src="img/social/FB-f-Logo__blue_300.png" width="175" alt="Facebook" />
+      <span>Post</span>
+    </a>
+    <a href="//www.pinterest.com/pin/create/button/" target="_blank" title="Pin this in Pinterest" class="social-link">
+      <img class="social-icon" src="img/social/pinterest_red_300.png" width="175" alt="Pintrest" />
+      <span>Pin</span>
+    </a>
+  </div>
+
+
+  <script src="js/vendor/jquery-1.10.1.min.js"></script>
+  <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+  <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/jquery.rateit.js"></script>
+  <script src="js/vendor/jquery.qtip.min.js"></script>
+  <!--<script src="js/jquery.modal.js"></script>-->
+  <script src="js/main.js"></script>
+  <script>
+	var objMenu = new baileysMenuClass(),
+		objPage = new baileysSubpageClass(),
+		objIntro = new baileysIntroClass();
+		
+	$(document).ready(function()
+	{
+		objIntro.init();
+		objMenu.init();
+		objPage.init();
+		
+		$('#rating-stars').rateit({ step: 1, starwidth: 30, starheight: 27, afterinit:function()
+		{
+			$(this).qtip({ 
+				position: {my:'bottom center', at:'top center', adjust: { y: -5 }},
+				content: 'Click to submit rating',
+				show: {
+					delay: 500
+				},
+				style: {
+				   classes: 'qtip-baileys',
+					tip: {
+						corner: true
+					}
+				}
+			});
+		} });
+		
+		//$('#btn-nutrition-info').click(function(event) {$('#dialog-container').triggerHandler('modalActivate','#nutrition-info');});
+		$('#btn-nutrition-info, .social-share-button').modal({closeButton: '.close-box'});
+		
+		//we bind only to the rateit controls within the products div
+		$('#rating-stars').bind('rated reset', function (e) 
+		{
+			var ri = $(this);
+			
+			//if the use pressed reset, it will get value: 0 (to be compatible with the HTML range control), we could check if e.type == 'reset', and then set the value to  null .
+			var value = ri.rateit('value');
+			var productID = ri.data('productid'); // if the product id was in some hidden field: ri.closest('li').find('input[name="productid"]').val()
+			
+			//maybe we want to disable voting?
+			ri.rateit('readonly', true);
+			
+			$.ajax({
+				url: 'rateit.aspx', //your server side script
+				data: { id: productID, value: value }, //our data
+				type: 'POST',
+				success: function (data) {
+				$('#response').append('<li>' + data + '</li>');
+				
+			},
+			error: function (jxhr, msg, err) {
+				$('#response').append('<li style="color:red">' + msg + '</li>');
+			}
+			});
+		});
+
+		$('.flavor').qtip({ 
+			position: {my:'bottom center', at:'top center', adjust: { y: -5 }},
+		    content: {
+        		attr: 'data-tooltip' 
+		    },
+			show: {
+        		delay: 500
+    		},
+			style: {
+     		   classes: 'qtip-baileys',
+			    tip: {
+            		corner: true
+        		}
+		    }
+		});
+		
+	});
+  </script> 
+</body>
+</html>

@@ -1,0 +1,10 @@
+.privacy-policy .constrain {
+	width:500px;
+}
+.privacy-policy .content {
+	overflow-y:auto;
+}
+.privacy-policy a {
+	color:#fff;
+}
+

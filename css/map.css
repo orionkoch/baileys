@@ -1,0 +1,193 @@
+.bly-map .corner-br {
+	display:none;
+}
+.map-canvas {
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.map-ui {
+	position:absolute;
+	bottom:55px;
+	right:58px;
+	width:200px;
+	height:300px;
+	padding:0 15px;
+	z-index:9999;
+	color:white;
+	border:3px solid #000;
+	background: #292929; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI5MjkyOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #292929 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#292929), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #292929 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #292929 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #292929 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #292929 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.map-ui h1 {
+	background:url(../img/bg_map_ui_h1.png) no-repeat center bottom;
+	color:#c2b59b;
+	font-size:16px;
+	line-height:1.2em;
+	margin:20px 0 15px 0;
+	padding-bottom:26px;
+	text-align:center;
+}
+.map-ui h1 span {
+	color:#efe7d6;
+	display:block;
+	font-size:19px;
+}
+.map-ui .row {
+	margin-bottom:14px;
+}
+
+/* Common form control styles */
+.selector, .selector span, .checker span, .radio span, .button, .button span, .textfield, .textfield input {
+	background-image: url("../img/bg_map_controls.png");
+	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased; 
+}
+.selector, .checker, .button, .radio, .uploader {
+	display: -moz-inline-box;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+	/* Keeping this as :focus to remove browser styles */ 
+}
+.selector:focus, .checker:focus, .button:focus, .radio:focus, .uploader:focus {
+	outline: 0; 
+}
+.selector, .selector *, .radio, .radio *, .checker, .checker *, .uploader, .uploader *, .button, .button * {
+	margin: 0;
+	padding: 0; 
+}
+
+/*Text Input*/
+.textfield {
+	background-position: 0px -79px;
+	line-height:39px;
+	height:39px;
+	padding: 0 0 0 12px;
+	position: relative;
+	overflow: hidden;
+	width: 195px;
+}
+.textfield input {
+	background-position: right -39px;
+	background-color:transparent;
+	border:none;
+	color:#ede5d6;
+	line-height:39px;
+	height:39px;
+	width:100%;
+}
+
+/* Combobox  */
+.selector {
+	background-position: 0px -79px;
+	line-height: 39px;
+	height: 39px;
+	padding: 0 0 0 12px;
+	position: relative;
+	overflow: hidden;
+	width:195px; 
+}
+.selector span {
+	text-overflow: ellipsis;
+	color:#ede5d6;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	background-position: right 1px;
+	height: 39px;
+	line-height: 39px;
+	padding-right: 43px;
+	cursor: pointer;
+	display: block; 
+	width:152px
+}
+.selector.fixedWidth {
+	width: 190px; 
+}
+.selector.fixedWidth span {
+	width: 153px; 
+}
+.selector select {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	border: none;
+	background: none;
+	position: absolute;
+	height: 25px;
+	top: 4px;
+	left: 0px;
+	width: 100%; 
+}
+
+/* Radio buttons*/
+.radio {
+	position: relative; 
+}
+.radio, .radio span, .radio input {
+	width: 23px;
+	height: 23px; 
+}
+.radio span {
+	display: -moz-inline-box;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	text-align: center;
+	background-position: 6px -118px; 
+}
+.radio span.checked {
+	background-position: -17px -117px; 
+}
+.radio input {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	border: none;
+	background: none;
+	display: -moz-inline-box;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	text-align: center; 
+}
+.radio.active span {
+	background-position: -23px -18px -343px; 
+}
+.radio.active span.checked {
+	background-position: -115px -343px; 
+}
+.radio.hover span, .radio.focus span {
+	background-position: -46px -36px -343px; 
+}
+.radio.hover span.checked, .radio.focus span.checked {
+	background-position: -138px -343px; 
+}
+.radio.hover.active span, .radio.focus.active span {
+	background-position: -69px -343px; 
+}
+.radio.hover.active span.checked, .radio.focus.active span.checked {
+	background-position: -161px -343px; 
+}
+.radio.disabled span, .radio.disabled.active span {
+	background-position: -184px -343px; 
+}
+.radio.disabled span.checked, .radio.disabled.active span.checked {
+	background-position: -207px -343px; 
+}

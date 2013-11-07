@@ -7,283 +7,305 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
+  <title>Baileys</title>
   <meta name="description" content="">
-  <!--<meta name="viewport" content="width=device-width">-->
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/map.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body>
-  <div class="container bly-map">
+  <div class="border bly-map">
     <div class="corner-tl"></div>
     <div class="corner-br"></div>
-	<div id="brand"></div>
-    <div class="content">
-      <div id="map-canvas" class="slide map" style="display:block"></div>
-      <div id="map-controls">
-        </div>
-    </div>
+	<a href="index.html" id="brand"></a>
     
-     <a href="#" class="view-nav">
-      <i></i><i></i><i></i>
-    </a>
+    <div class="container">
+      <div id="map-canvas" class="map-canvas" style="display:block"></div>
+      <div class="map-ui">
+        <h1>Where to Buy<span>Baileys Creamers</span></h1>
+        <div class="row selector">
+          <span>Any Flavor</span>
+          <select name="flavor">
+            <option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+          </select>
+        </div>
+        <div class="row">
+        <label>
+          <div class="radio">
+            <span class="checked">
+              <input name="size" type="radio" value="radio1">
+            </span>
+          </div>
+          Any
+        </label>
+        <label>
+          <div class="radio">
+            <span>
+              <input name="size" type="radio" value="radio1">
+            </span>
+          </div>
+          16oz
+        </label>
+        <label>
+          <div class="radio">
+            <span>
+              <input name="size" type="radio" value="radio1">
+            </span>
+          </div>
+          32oz
+        </label>
+        </div>
+        <div class="row textfield">
+          <input name="zipcode" type="text" placeholder="Zip code" />
+        </div>
+        <div class="row selector">
+          <span>0 - 5 Miles</span>
+          <select>
+            <option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+          </select>
+        </div>
+      </div>
+    </div>
 
-    <nav id="nav">
-      <h1>Menu</h1>
-      <ul class="primary">
-        <li><a>Flavors</a>
-          <ul>
-            <li><a hef="#">French Vanilla</a></li>
-            <li><a hef="#">French Vanilla, Fat Free</a></li>
-            <li><a hef="#">Hazelnut</a></li>
-            <li><a hef="#">Caramel</a></li>
-            <li><a hef="#">The Original Irish Cream</a></li>
-            <li><a hef="#">The Original Irish Cream Fat Free</a></li>
-            <li><a hef="#">Creme Brulee</a></li>
-            <li><a hef="#">Toffee Almond Creme</a></li>
-            <li><a hef="#">Latte Macchiato</a></li>
-            <li><a hef="#">Triple Sweet Creme</a></li>
-            <li><a hef="#">Brown Butter Peacan</a></li>
-            <li><a hef="#">Baileys Mudslide</a></li>
-            <li><a hef="#">Vanilla Brown Sugar</a></li>
-            <li><a hef="#">White Chocolate Respberry</a></li>
+    <div class="legal">
+    <p>Produced by HP Hood LLC <br />
+       under license from R&A Bailey Co.</p>
+    </div>
+
+    <div id="tabs">
+    
+        <div class="tabs-nav">
+          <a href="#tab-1" class="tab-anchor menu"><span>Menu</span></a>
+          <a href="#tab-2" class="tab-anchor search"><span>Search</span></a>
+        </div>
+
+        <nav id="tab-1" class="tab-panel">
+          <h1>Menu</h1>
+          
+          <h2>Flavors</h2>
+          
+          <div id="nav-clip">
+            <ul class="primary">
+              <li>
+                <ul>
+                  <li><a href="flavor.html">French Vanilla</a></li>
+                  <li><a href="flavor.html">Hazelnut</a></li>
+                  <li><a href="flavor.html">Caramel</a></li>
+                  <li><a href="flavor.html">The Original Irish Cream</a></li>
+                  <li><a href="flavor.html">Creme Brulee</a></li>
+                  <li><a href="flavor.html">Toffee Almond Creme</a></li>
+                  <li><a href="flavor.html">Latte Macchiato</a></li>
+                  <li><a href="flavor.html">Triple Sweet Creme</a></li>
+                  <li><a href="flavor.html">Brown Butter Pecan</a></li>
+                  <li><a href="flavor.html">Baileys Mudslide</a></li>
+                  <li><a href="flavor.html">Vanilla Brown Sugar</a></li>
+                </ul>
+              </li>
+              <li><span class="flavor_labels">Limited Edition</span>
+                <ul>
+                  <li><a href="flavor.html">White Chocolate Raspberry</a></li>
+                </ul>
+              </li>
+              <li><span class="flavor_labels">Fat Free</span>
+                <ul>
+                  <li><a href="flavor.html">French Vanilla, Fat Free</a></li>
+                  <li><a href="flavor.html">The Original Irish Cream Fat Free</a></li>
+                </ul>
+              </li>
+              <li><span class="flavor_labels">Seasonal</span>
+                <ul>
+                  <li><a href="flavor.html">Red Velvet Cupcake</a></li>
+                  <li><a href="flavor.html">White Chocolate Peppermint Bark</a></li>
+                  <li><a href="flavor.html">Pumpkin Spice</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+          <ul class="menu_two">
+	          <li><a href="recipes.html">Recipes</a></li>
+              <li><a href="coupons.html">Coupons</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="map.html">Where to Buy</a></li>
           </ul>
-        </li>
-        <li><a>Recipes</a></li>
-        <li><a>FAQs</a></li>
-        <li><a>Where to Buy</a></li>
-      </ul>
-      <ul class="social">
-        <li><a class="facebook">Bailey's Creamers on Facebook</a></li>
-        <li><a class="twitter">Bailey's Creamers on Twitter</a></li>
-      </ul>
-	</nav>
+          
+          <div class="social clearfix">
+            <a href="https://www.facebook.com/BAILEYSCreamers" class="facebook external-link"></a>
+            <a href="https://twitter.com/share?via=BAILEYScreamers" class="twitter external-link"></a>
+            <a href="http://www.pinterest.com/baileyscreamers/" class="pintrest external-link"></a>
+            <a href="http://instagram.com/baileyscreamers" class="instagram external-link"></a>
+          </div>
+          
+          <ul class="secondary clearfix">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+          
+          <a class="canada_link" href="#">Canadian Products</a>
+          
+        </nav>
+    
+        <div id="tab-2" class="tab-panel">
+          <h1>Search</h1>
+          <form name="search">
+            <input type="text" id="site-search" name="search" class="txt-site-search" placeholder="type search here" />
+            <button class="btn-site-search"></button>
+          </form>
+          <div class="site-search-results">
+            <h2 class="site-search-h2">Results</h2>
+            <ul>
+              <li><a href="flavor.html">Caramel Sugar Cookies</a></li>
+              <li><a href="flavor.html">Creamy Pavlova Meringue Cookies</a></li>
+              <li><a href="flavor.html">BAILEYS White Chocolate Raspberry Sandwich Cookies</a></li>
+              <li><a href="flavor.html">BAILEYS Vanilla Brown Sugar Cookie Bars</a></li>
+              <li><a href="flavor.html">Mint Cookie Pie with Cotton Candy Wisps</a></li>
+              <li><a href="flavor.html">Chocolate Chip Ice Cream Sandwiches</a></li>
+              <li><a href="flavor.html">Sunflower Brittle</a></li>
+            </ul>
+          </div>
+        </div>
+    
+    </div>
 
   </div>
-
+  <!-- end .border -->
   <script src="js/vendor/jquery-1.10.1.min.js"></script>
   <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+  <script src="js/vendor/jquery.easing.1.3.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2BSVUu0TTTCg9wKt0FzzPS6p_qPAlK_g&sensor=true"></script>
+  <script src="js/map.js"></script>
   <script type="text/javascript">
 	var map;
 	
-	function initialize() {
-	  var mapOptions = {
-		zoom: 16,
-		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		panControl: true,
-		panControlOptions: {
-			position: google.maps.ControlPosition.LEFT_BOTTOM
-		},
-		zoomControl: true,
-		zoomControlOptions: {
-			style: google.maps.ZoomControlStyle.LARGE,
-			position: google.maps.ControlPosition.LEFT_BOTTOM
-		}
-	  };
-	  map = new google.maps.Map(document.getElementById('map-canvas'),
-		  mapOptions);
-	
-	  // Try HTML5 geolocation
-	  if(navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(function(position) {
-		  var pos = new google.maps.LatLng(position.coords.latitude,
-										   position.coords.longitude);
-	
-		  var infowindow = new google.maps.InfoWindow({
+	function initialize() 
+	{
+		var mapOptions = 
+			{
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				panControl: true,
+				control: 
+				{
+					position: google.maps.ControlPosition.LEFT_BOTTOM
+				},
+				zoomControl: true,
+				zoomControlOptions: 
+				{
+					style: google.maps.ZoomControlStyle.LARGE,
+					position: google.maps.ControlPosition.LEFT_BOTTOM
+				},
+				mapTypeControl: true,
+				mapTypeControlOptions: {
+					style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+					position: google.maps.ControlPosition.TOP_CENTER
+				}
+			},
+			$mapui = $('.map-ui');
+
+		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+		google.maps.event.addListener(map, 'dragstart', function() { $mapui.animate({opacity:0.4}) } );
+		google.maps.event.addListener(map, 'dragend', function() { $mapui.animate({opacity:1}) } );
+
+		var baileysMarker = 'img/img_map_marker.png';
+
+		var myLatLng1 = new google.maps.LatLng(42.301439, -71.383535);
+		var myLatLng2 = new google.maps.LatLng(42.403946, -71.080735);
+		var myLatLng3 = new google.maps.LatLng(42.340985, -71.070627);
+
+		var natickMall = new google.maps.Marker({
+			position: myLatLng1,
 			map: map,
-			position: pos,
-			content: 'Location found using HTML5.'
-		  });
-	
-		  map.setCenter(pos);
-		}, function() {
-		  handleNoGeolocation(true);
+			icon: baileysMarker
 		});
-	  } else {
-		// Browser doesn't support Geolocation
-		handleNoGeolocation(false);
-	  }
+		
+		var myHouse = new google.maps.Marker({
+			position: myLatLng2,
+			map: map,
+			icon: baileysMarker
+		});
+		
+		var foodies = new google.maps.Marker({
+			position: myLatLng3,
+			map: map,
+			icon: baileysMarker
+		});
+		
+
+
+		// Try HTML5 geolocation
+		if(navigator.geolocation) 
+		{
+			navigator.geolocation.getCurrentPosition(function(position) 
+			{
+				var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+				var infowindow = new google.maps.InfoWindow(
+				{
+					map: map,
+					position: pos,
+					content: 'Location found using HTML5.'
+				});
+				
+				map.setCenter(pos);		
+			},
+			
+			function() 
+			{
+				handleNoGeolocation(true);
+			});
+		} 
+		else 
+		{
+			// Browser doesn't support Geolocation
+			handleNoGeolocation(false);
+		}
 	}
 	
-	function handleNoGeolocation(errorFlag) {
-	  if (errorFlag) {
-		var content = 'Error: The Geolocation service failed.';
-	  } else {
-		var content = 'Error: Your browser doesn\'t support geolocation.';
-	  }
-	
-	  var options = {
-		map: map,
-		position: new google.maps.LatLng(60, 105),
-		content: content
-	  };
-	
-	  var infowindow = new google.maps.InfoWindow(options);
-	  map.setCenter(options.position);
+	function handleNoGeolocation(errorFlag) 
+	{
+		if (errorFlag) 
+		{
+			var content = 'Error: The Geolocation service failed.';
+		} 
+		else 
+		{
+			var content = 'Error: Your browser doesn\'t support geolocation.';
+		}
+		
+		var options = {
+			map: map,
+			position: new google.maps.LatLng(60, 105),
+			content: content
+		};
+		
+		var infowindow = new google.maps.InfoWindow(options);
+		map.setCenter(options.position);
 	}
+	
 	
 	google.maps.event.addDomListener(window, 'load', initialize);
+
   </script>
+  <script src="js/main.js"></script>
   <script>
-$(document).ready(function(){
-	smartHeight();
-	$(window).resize(smartHeight);
-	menu();
-	//carousel();
-	//carouselSwipe();
-}); 
-
-/////////////////////////////////////////
-// Smart Height
-/////////////////////////////////////////
-
-function smartHeight() {
-	//$('.container').height($(window).innerHeight());
-	$('.content').height($('.container').height());
-	$('.slide').height($('.content').height());
-}
-
-/////////////////////////////////////////
-// Menu
-/////////////////////////////////////////
-
-var open = false,
-    timer = null;
-
-function menu()
-{
-	$('.view-nav').hover(function() 
-	{
-		if (!open) {
-			timer = setTimeout(function() {
-				$('.view-nav').animate({right: '465px' }, 300);
-				$('.content').animate({left:'-450px', right: '450px' }, 300);	
-				$('#nav').animate({right: '0' }, 300);	
-				open = true;				
-			}, 150);			
-		}
-	});
-	
-	$('.view-nav').click(function(e)
-	{
-		if (!open) 
-		{
-			timer = setTimeout(function() {
-				$('.view-nav').animate({right: '465px' }, 300);
-				$('#nav').animate({right: '0' }, 300);
-				$('.content').animate({left:'-450px', right: '450px' }, 300);	
-				open = true;				
-			}, 150);			
-		}
-		else {
-			timer = setTimeout(function() {
-				$('.view-nav').animate({right: '15px' }, 300);
-				$('#nav').animate({right: '-450px' }, 300);
-				$('.content').animate({left:'0px', right: '0px' }, 300);	
-				open = false;				
-			}, 150);			
-			
-		}
-	});
-	
-	$('.content').hover(function() 
-	{
-		if (open) {
-			$('.view-nav').animate({right: '15px' }, 300);
-			$('#nav').animate({right: '-450px' }, 300);
-			$('.content').animate({left:'0px', right: '0px' }, 300);	
-			open = false;
-		}
-	});	
-	
-	$('.content').click(function() 
-	{
-		if (open) {
-			$('.view-nav').animate({right: '0' }, 300);
-			$('.hero').animate({left: '0' }, 300);				
-			$('nav').animate({right: '-450px' }, 300);
-			open = false;
-		}
-	});
-}
-
-
-/////////////////////////////////////////
-// Carousel
-/////////////////////////////////////////
-
-var currentSlide = 0;
-var newSlide = 1;
-var browserWidth = window.innerWidth;
-
-function carousel() 
-{
-	var $counter = $('.counter'),
-		$counterLis = $('.counter li'),
-		counterWidth = $counterLis.outerWidth(true) * $counterLis.length;
+	var objMenu = new baileysMenuClass(),
+		objIntro = new baileysIntroClass(),
+		objMapUi = new baileysMapUIClass();
 		
-		console.log($counter, $counterLis);
-		
-	$('.counter a').click(function() {
-		console.log('click');
-		newSlide = $(this).prop('rel');
-		heroSlide('right');
+	$(document).ready(function()
+	{
+		objMenu.init();
+		objMapUi.init();
+		objIntro.init();
 	});
-
-	$('.slide').eq(currentSlide).show();
-	$counter.width(counterWidth).height(10);
-	
-}
-
-function heroSlide(direction) 
-{
-	//console.log('start slide');
-	if (direction == 'right') {
-		$('.slide').eq(currentSlide).animate({left: (-1 * browserWidth)}, 400);
-		$('.slide').eq(newSlide).css({left: (browserWidth - 60), display : 'block'}).animate({left: 0}, 400, 'swing', function() {
-			$('.counter a').removeClass('active');
-			$('.counter a').eq(newSlide).addClass('active');
-			currentSlide = newSlide;
-			//console.log('end slide');
-		});	
-	}
-	else {		
-		$('.slide').eq(currentSlide).animate({left: ( browserWidth)}, 400);
-		$('.slide').eq(newSlide).css({left: (-1 * (browserWidth)), display : 'block'}).animate({left: 0}, 400, 'swing', function() {
-			$('.counter a').removeClass('active');
-			$('.counter a').eq(newSlide).addClass('active');
-			currentSlide = newSlide;
-			//console.log('end slide');
-		});	
-	}
-}
-
-function carouselSwipe() 
-{
-	$(".content").swipe( {
-		swipeLeft:function(event, direction) {
-			//console.log(direction);
-			newSlide = currentSlide < ($('.counter li').length - 1) ? (currentSlide + 1) : 0;
-			heroSlide('right');
-		},
-		swipeRight:function(event, direction) {
-			//console.log(direction);
-			newSlide = currentSlide > 0 ? (currentSlide - 1) : ($('.counter li').length - 1);
-			heroSlide('left');		
-		},
-		threshold:30, allowPageScroll: 'none'
-	});
-}
-
-/////////////////////////////////////////
-// IE Fix
-/////////////////////////////////////////
-
-document.createElement("article");
-document.createElement("section");
-  </script>
+  </script> 
 </body>
 </html>

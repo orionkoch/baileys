@@ -7,76 +7,58 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>BAILEYS Creamers</title>
+  <title>Baileys</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/coupons.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
-<body>
+<body class="coupons">
   <div class="border">
     <div class="corner-tl"></div>
     <div class="corner-br"></div>
+    <div class="corner-bl"></div>
 	<a href="index.html" id="brand"></a>
-    <a href="#" class="nav-left"></a>
-    <a href="#" class="nav-right"></a>
     
     <div class="container">
-      <div id="overlay">
-        <img src="img/logo_big.png" alt="" width="300" height="273" class="intro-logo" />
+    
+      <h1 class="heading">
+        Baileys&reg; Coffee Creamers
+		<span>Coupons</span>
+      </h1>
+    
+      <div class="content">
+        <img class="content-img-right fadeIn" src="img/img_coupons_hero.png" alt="" data-fadein-order="2" />
+          <div class="constrain fadeIn" data-fadein-order="1">
+            <h1>More than Coupons</h1>
+            <h2>We'll do you one better.</h2>
+            <p>We love to reward our fans with gifts that let you enjoy the BAILEYS® experience to the fullest. 
+               So check back for our latest promotions and activities. And don’t be afraid to keep it social - we 
+               always have unique offers for our followers.</p>
+            <p class="social">
+              <a href="https://www.facebook.com/BAILEYSCreamers" class="facebook external-link"></a>
+              <a href="https://twitter.com/share?via=BAILEYScreamers" class="twitter external-link"></a>
+              <a href="http://www.pinterest.com/baileyscreamers/" class="pintrest external-link"></a>
+              <a href="http://instagram.com/baileyscreamers" class="instagram external-link"></a>
+            </p>
+            <form id="email-signup" action="" class="clearfix">
+              <fieldset>
+                <legend>Join the BAILEYS&reg; Coffee Creamers Club</legend>
+                <p>Receive special offers, flavor updates, and insider info</p>
+                <label>Email Address:&nbsp;&nbsp; 
+                <input class="glow" type="text" autocomplete="" name="email" value="" id="email" />
+                </label>
+                <input type="submit" value="Join" />
+              </fieldset>
+            </form>
+          </div>
+           
       </div>
-      <div class="slide promo1" data-animation-function="animatePromo1">
-        <div class="slide-content center-container">
-          <div class="absolute-center">
-          <h1 class="promo1-h1">Discover the Flavor that<br />Defines Your Taste</h1>
-          <div class="promo1-links clearfix">
-            <a href="flavor.html" class="promo1-link">View our<span>flavor lineup</span></a>
-            <a href="recipes.html" class="promo1-link">Scan our<span>recipe book</span></a>
-            <a href="map.html" class="promo1-link">Find out<span>where to buy</span></a>
-          </div>
-          </div>
-          <img class="promo1-bottles" src="img/img_promo_1_bottles.png" alt="" />
-        </div>
-      </div>
-      <div class="slide promo2" data-animation-function="animatePromo2">
-        <div class="slide-content">
-          <div class="left-col">
-            <h1 class="promo2-h1">Introducing Our <span>Seasonal Flavors</span></h1>
-            <h2 class="promo2-h2">
-              The chill of the holiday season is upon us. 
-              And there’s no better way to warm up each day 
-              than with a festive splash of BAILEYS® Coffee 
-              Creamers in every cup.</h2>
-            <span class="promo2-meet">Meet the Flavors</span>
-          </div>
-          <div class="promo2-bottles">
-            <a href="flavor.html" class="promo2-bottle">
-              <img src="img/img_promo_2_bottles_1.png" width="175" height="543" alt=""/>
-              <p class="promo2-bottles-label pumpkin">
-                Pumpkin Spice<br />
-                <img src="img/btn_promo2_view.png" width="78" height="37" alt="View" />
-              </p>
-            </a>
-            <a href="flavor.html" class="promo2-bottle">
-              <img src="img/img_promo_2_bottles_2.png" width="209" height="543" alt=""/>
-              <p class="promo2-bottles-label redvelvet">
-                Red Velvet Cupcake<br />
-                <img src="img/btn_promo2_view.png" width="78" height="37" alt="View" />
-              </p>
-            </a>
-            <a href="flavor.html" class="promo2-bottle">
-              <img src="img/img_promo_2_bottles_3.png" width="172" height="543" alt=""/>
-              <p class="promo2-bottles-label whitechocbark">
-                White Chocolate<br />Peppermint bark<br />
-                <img src="img/btn_promo2_view.png" width="78" height="37" alt="View" />
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
+      <!-- end .content -->
     </div>
+    <!-- end .container -->
 
     <div class="legal">
     <p>Produced by HP Hood LLC <br />
@@ -157,15 +139,15 @@
           <a class="canada_link" href="#">Canadian Products</a>
           
         </nav>
-            
+    
         <div id="tab-2" class="tab-panel">
           <h1>Search</h1>
           <form name="search">
-            <input type="text" id="site-search" name="search" class="txt-site-search" placeholder="search" />
+            <input type="text" id="site-search" name="search" class="txt-site-search" placeholder="type search here" />
             <button class="btn-site-search"></button>
           </form>
           <div class="site-search-results">
-            <h2 class="site-search-h2">Results:</h2>
+            <h2 class="site-search-h2">Results</h2>
             <ul>
               <li><a href="flavor.html">Caramel Sugar Cookies</a></li>
               <li><a href="flavor.html">Creamy Pavlova Meringue Cookies</a></li>
@@ -181,24 +163,23 @@
     </div>
 
   </div>
+  <!-- end .border -->
 
   <script src="js/vendor/jquery-1.10.1.min.js"></script>
   <script src="js/vendor/jquery.touchSwipe.min.js"></script>
   <script src="js/vendor/jquery.easing.1.3.js"></script>
-  <script src="js/vendor/jquery.fittext.js"></script>
   <script src="js/main.js"></script>
   <script>
-	var objMenu    = new baileysMenuClass(),
-		objPromos  = new baileysPromoAnimationsClass(),
-		objSlider  = new baileysSliderClass(),
-		objIntro   = new baileysIntroClass();
-	
-	$(window).load(function()
+	var objMenu = new baileysMenuClass(),
+		objPage = new baileysSubpageClass(),
+		objIntro = new baileysIntroClass();
+		
+	$(document).ready(function()
 	{
-		objMenu.init();
-		objSlider.init();
 		objIntro.init();
+		objMenu.init();
+		objPage.init();
 	});
-  </script>
+  </script> 
 </body>
 </html>

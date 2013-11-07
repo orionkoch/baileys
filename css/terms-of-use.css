@@ -1,0 +1,10 @@
+.terms-of-use .constrain {
+	width:500px;
+}
+.terms-of-use .content {
+	overflow-y:auto;
+}
+.terms-of-use a {
+	color:#fff;
+}
+
