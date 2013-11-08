@@ -1,21 +1,18 @@
 .content {
-    color: #dac7a2;
-    font-size: 13px;
-    position: absolute;
-    top: 36%;
-    left: 0;
-    right: 0;
-    bottom: 50px;
-    width: 980px;
-    margin: 0 auto;
+	width:880px;
+	margin-left: -440px;
+	overflow-y:auto;
 }
 .coupons .constrain {
 	width:500px;
 }
+.coupons .content-img-right {
+	margin: 0 0 0 28px;
+}
 .coupons .content h1,
 .coupons .content h2 {
 	color:#fff;
-	text-transform:uppercase;
+	text-transform:uppercase;margin-top:0;
 }
 .coupons .content h1 {
 	font-size: 35px;
