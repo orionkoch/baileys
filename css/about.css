@@ -1,3 +1,8 @@
+.about .content {
+	width: 880px;
+	margin-left: -440px;
+	overflow-y:auto;
+}
 .about .constrain {
 	width:500px;
 }
