@@ -1,5 +1,7 @@
 .recipe div.header {
     height: 200px;
+    position: relative;
+    top: 10px;
 }
 
 .content {
@@ -133,7 +135,7 @@
 .view-other-recipes {
 	clear:both;
 	text-align:center;
-	margin:45px 0;
+	margin:49px 0 0 -102px;
 }
 .view-other-recipes a {
 	color:#ddccaa;
