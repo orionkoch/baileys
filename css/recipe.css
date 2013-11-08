@@ -1,3 +1,15 @@
+.content {
+    color: #dac7a2;
+    font-size: 13px;
+    position: absolute;
+    top: 36%;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    width: 980px;
+    margin: 0 auto;
+}
+
 .recipe .container {
     background: none repeat scroll 0 0 #392727;
 }
