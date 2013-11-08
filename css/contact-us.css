@@ -99,17 +99,13 @@
 }
 @media screen and (min-width:1824px) {
 	.contact-us .heading {
-		x-width: 60%;
-		x-height: auto;
-		x-letter-spacing: .25em;
-		x-font-size: 3em;
+
 	}
 	.contact-us .heading span {
-		x-font-size: 2.25em;
-		x-line-height: 1.75;
+
 	}
 	.contact-us .content {
-		overflow-y: auto;
+		
 	}
 	.contact-us section.blurb {
 		width: 25%;
@@ -118,7 +114,7 @@
 	.contact-us section.form-container {
 		width: 75%;
 		float: right;
-		x-overflow-y: scroll;
+
 	}
 	.contact-us #contact-us_form fieldset.data-box {
 		width: 66.666%;
@@ -147,7 +143,7 @@
 	}
 }
 .contact-us .content {
-	x-position: static;
+
 }
 .contact-us .social {
 	margin-top:20px;
@@ -180,8 +176,6 @@
 	color: #e0e0e0;
 	resize: none;
 	border-radius: .5em;
-	-webkit-border-radius: .5em;
-	-ms-border-radius: .5em;
 	background-clip: border-box;
 	height: 2em;
 	line-height: 2;
@@ -191,15 +185,13 @@
 .contact-us input[type=submit] {
 	background: #3b5c6d;
 	border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-ms-border-radius: 20px;
 	text-transform: uppercase;
 	border: none;
 	margin: 0;
 	color: #fff;
 	padding:7px 20px;
 	line-height:2em;
-	padding:0 20px;
+
 }
 .contact-us input[type=submit].large {
 	width:200px;
@@ -218,7 +210,7 @@
 	line-height: 1.25;
 }
 .contact-us #contact-us_form select {
-	overflow-y: scroll;
+
 }
 .contact-us #contact-us_form option {
 	height: 2em;
@@ -242,4 +234,4 @@ div.captcha {
 	text-transform:uppercase;
 }
 
-/*******/
+/********/
