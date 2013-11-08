@@ -881,6 +881,9 @@ function baileysIntroClass()
 		$overlay.hide();
 		$counter.show();
 
+		if($brand.parents('body').hasClass('recipes'))
+			$brand.css('top', -20);
+
 		if(Modernizr.csstransitions)
 			$nav.fadeIn(200);
 		else
@@ -893,7 +896,9 @@ function baileysIntroClass()
 	 */
 	this.init = function()
 	{
-		
+		var $brand = $('#brand'),
+			brandStart, brandStop;
+			
 		if(!docCookies.getItem('baileysFirstVisit') && isHomePage)
 		{
 			docCookies.setItem("baileysFirstVisit", "true", Infinity);
@@ -909,12 +914,17 @@ function baileysIntroClass()
 			_startSubpage();
 		}
 
+		brandStart = ($brand.parents('body').hasClass('recipes')) ? -20 : -10;
+		brandStop = brandStart+5;
+		brandStart += 'px';
+		brandStop += 'px';
+		
 		$('#brand')
 		  .mouseenter(function(){
-			$(this).animate({top: '-5px'}, 200);
+			$(this).animate({top: brandStop}, 200);
 		  })
 		  .mouseleave(function(){
-		    $(this).animate({top: '-10px'}, 200);
+		    $(this).animate({top: brandStart}, 200);
 		  });
 		  
 		$('.external-link').modal();
