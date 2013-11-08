@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea167917-b36c-4428-b921-2cdfec78a5c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/recipe.css" afterPath="$PROJECT_DIR$/css/recipe.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recipe.html" afterPath="$PROJECT_DIR$/recipe.html" />
     </list>
     <ignored path="baileys.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +46,7 @@
       <file leaf-file-name="recipe.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/recipe.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="0" selection-start="3361" selection-end="3361" vertical-scroll-proportion="0.8166259" vertical-offset="2107" max-vertical-offset="3075">
+            <state line="176" column="20" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.6882641" vertical-offset="2077" max-vertical-offset="3090">
               <folding />
             </state>
           </provider>
@@ -74,7 +73,7 @@
       <file leaf-file-name="recipe.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recipe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="44" selection-start="4041" selection-end="4049" vertical-scroll-proportion="-13.75" vertical-offset="705" max-vertical-offset="3510">
+            <state line="71" column="24" selection-start="4131" selection-end="4131" vertical-scroll-proportion="-15.0" vertical-offset="705" max-vertical-offset="3510">
               <folding />
             </state>
           </provider>
@@ -554,14 +553,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recipe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="44" selection-start="4041" selection-end="4049" vertical-scroll-proportion="-13.75" vertical-offset="705" max-vertical-offset="3510">
+        <state line="71" column="24" selection-start="4131" selection-end="4131" vertical-scroll-proportion="-15.0" vertical-offset="705" max-vertical-offset="3510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/recipe.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="0" selection-start="3361" selection-end="3361" vertical-scroll-proportion="0.8166259" vertical-offset="2107" max-vertical-offset="3075">
+        <state line="176" column="20" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.6882641" vertical-offset="2077" max-vertical-offset="3090">
           <folding />
         </state>
       </provider>

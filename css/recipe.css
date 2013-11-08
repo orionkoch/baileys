@@ -174,16 +174,17 @@
 .recipe .printBtn {
     position: relative;
     float: right;
-    color: #a3cffe;
     font-size: 12px;
+    top:-20px;  left: -30px;
 }
 .recipe .printBtn a{
 
     color: #a3cffe;
+    text-decoration: none;
 
 }
 .recipe .printBtn a:hover{
-
+    text-decoration: none;
     color: #deeeff;
 
 }
