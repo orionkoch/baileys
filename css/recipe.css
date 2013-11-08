@@ -132,9 +132,9 @@
     left: 49px;
 }
 .recipe .tab.recipe-home a {
-	background: url(../img/bg_recipe_home.png) no-repeat 7px 3px;
+	background: url(../img/bg_recipe_home.png) no-repeat 0 3px;
 	padding-left: 50px;
-	margin-left: 20px;
+	/*margin-left: 20px;*/
 	font-size: 14px;
 }
 
