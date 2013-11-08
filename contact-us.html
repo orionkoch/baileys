@@ -184,20 +184,19 @@
                 <label class="radio"><input type="radio" name="contact_form-return_method" value="E-Mail" id="contact_form-return_email"> By Email</label>
                 <label class="radio"><input type="radio" name="contact_form-return_method" value="Phone" id="contact_form-return_phone"> By Phone</label>
               </div>
-                <!--< <br />
-   div id="captchadiv"></div>-->
-                <!--<script type="text/javascript"-->
-                    <!--src="http://www.google.com/recaptcha/api/challenge?k=your_public_key">-->
-                 <!--</script>-->
-                 <!--<noscript>-->
-                    <!--<iframe src="http://www.google.com/recaptcha/api/noscript?k=your_public_key"-->
-                        <!--height="300" width="500" frameborder="0"></iframe><br>-->
-                    <!--<textarea name="recaptcha_challenge_field" rows="3" cols="40">-->
-                    <!--</textarea>-->
-                    <!--<input type="hidden" name="recaptcha_response_field"-->
-                        <!--value="manual_challenge">-->
-                 <!--</noscript>-->
-              <div>
+                <br /> <div id="captchadiv"></div>
+                <script type="text/javascript">
+                    src="http://www.google.com/recaptcha/api/challenge?k=your_public_key">
+                 </script>
+                 <noscript>
+                    <iframe src="http://www.google.com/recaptcha/api/noscript?k=your_public_key"
+                         frameborder="0"></iframe><br>
+                    <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+                    </textarea>
+                    <input type="hidden" name="recaptcha_response_field"
+                        value="manual_challenge">
+                 </noscript>
+
                             <br />
                             <input class="large" type="submit" value="Submit" /></div>
               <p id="success"></p>
@@ -326,7 +325,7 @@
 		objIntro.init();
 		objMenu.init();
 		objPage.init();
-        Recaptcha.create("6Ld4iQsAAAAAAM3nfX_K0vXaUudl2Gk0lpTF3REf","captchadiv",{theme: "blackglass"});
+        Recaptcha.create("6Lfq8ukSAAAAAGenFYuHJCo_N_nhAPbE7eFOUImo","captchadiv",{theme: "blackglass"});
 	});
   </script>
 
