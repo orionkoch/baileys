@@ -175,7 +175,8 @@
     position: relative;
     float: right;
     font-size: 12px;
-    top:-20px;  left: -30px;
+    top:-20px;
+    left: -30px;
 }
 .recipe .printBtn a{
 
