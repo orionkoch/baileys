@@ -51,9 +51,11 @@
 }
 .promo1-bottles {
     position: absolute;
-    top: 73%;
-    left: 50%;
-    margin-left: -543px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+
     display: none;
     z-index:-1;
 }
