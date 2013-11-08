@@ -876,7 +876,7 @@ function baileysIntroClass()
 			$counter   = $('.counter'),
 			$nav       = $('.nav-left, .nav-right');
 	
-		$brand.css('top', 0);
+		$brand.css('top', -10);
 		$tabs.css('right', -450);
 		$overlay.hide();
 		$counter.show();
@@ -911,7 +911,7 @@ function baileysIntroClass()
 			$(this).animate({top: '-5px'}, 200);
 		  })
 		  .mouseleave(function(){
-		    $(this).animate({top: 0}, 200);
+		    $(this).animate({top: '-10px'}, 200);
 		  });
 		  
 		$('.external-link').modal();
