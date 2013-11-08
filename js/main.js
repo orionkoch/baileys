@@ -880,8 +880,11 @@ function baileysIntroClass()
 		$tabs.css('right', -450);
 		$overlay.hide();
 		$counter.show();
-		//$nav.animate({opacity: 1}, 200);
-		$nav.fadeIn(200);
+
+		if(Modernizr.csstransitions)
+			$nav.fadeIn(200);
+		else
+			$nav.show();
 	}
 
 	
