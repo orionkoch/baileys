@@ -3,11 +3,12 @@
     font-size: 13px;
     position: absolute;
     top: 36%;
+    left: 0;
+    right: 0;
     bottom: 50px;
     width: 980px;
-    margin: 0 8%;
+    margin: 0 auto;
 }
-
 .coupons .constrain {
 	width:500px;
 }
