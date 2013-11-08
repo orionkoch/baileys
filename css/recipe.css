@@ -61,6 +61,18 @@
     text-decoration: none;
     font-size: 20px;
 }
+
+.recipe .tab span {
+
+    text-transform:uppercase;
+
+}
+.recipe .tabs a span{
+
+    color: #a3cffe;
+    text-decoration: none;
+    font-size: 12px;
+}
 .recipe .tabs {
 	position:absolute;
 	top:-70px;
