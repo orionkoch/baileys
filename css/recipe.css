@@ -149,39 +149,7 @@
 	height:37px;
 }
 
-/*
-   Tabs - base styles
-   -------------------------------------------------------------------------- */
-.tabs {
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-.tabs li {
-    display:inline-block;
-}
-.tabs a {
-    padding: 0 20px 0 20px;
-    display: block;
-    color: #a1a1a1;
-    text-decoration: none;
-    font-size:20px;
-}
-.tabs .active a {
-    color:#fff;
-}
-.tab {
-    border:3px solid #4b3d3b;
 
-    border-radius: 20px 20px 0 0;
-    border-bottom: 0;
-}
-.tab-content {
-    padding:0;
-    border:3px solid #736d66;
-    border-radius: 0px 20px 20px 20px;
-    display:none;
-}
 
 /*
 
