@@ -21,7 +21,7 @@
 	float: left;
 }
 .contact-us .content {
-	overflow-y: auto;
+	/*overflow-y: auto;*/
 }
 .contact-us .col-r  {
 	padding: .25em 0 0 0;
@@ -38,10 +38,10 @@
 
 @media handheld, screen and (max-width:800px) {
 	.contact-us .heading {
-		x-margin-top: 210px;
+
 	}
 	.contact-us .content {
-		overflow-y: auto;
+		/*overflow-y: auto;*/
 	}
 	.contact-us .content section {
 		clear:left;
@@ -66,15 +66,13 @@
 }
 @media screen and (min-width:801px) and (max-width:1824px) {
 	.contact-us .heading {
-		x-width: 60%;
-		x-height: auto;
+
 	}
 	.contact-us .heading span {
-		x-font-size: 450%;
-		x-line-height: 1.75;
+
 	}
 	.contact-us .content {
-		overflow-y: auto;
+		/*overflow-y: auto;*/
 	}
 	.contact-us section.blurb {
 		width: 33.333%;
@@ -83,8 +81,7 @@
 	.contact-us section.form-container {
 		float: left;
 		width: 66.666%;
-		x-overflow-y: scroll;
-	}
+		}
 	.contact-us #contact-us_form fieldset.data-box {
 		min-width: 25em;
 		float: left;
@@ -244,3 +241,5 @@ div.captcha {
 	color:#fff;
 	text-transform:uppercase;
 }
+
+/*******/
