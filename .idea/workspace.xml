@@ -26,16 +26,16 @@
       <file leaf-file-name="coupons.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coupons.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="17" selection-start="4989" selection-end="4989" vertical-scroll-proportion="-20.0" vertical-offset="1230" max-vertical-offset="2850">
+            <state line="40" column="47" selection-start="1034" selection-end="2562" vertical-scroll-proportion="-15.375" vertical-offset="231" max-vertical-offset="2850">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about.html">
+      <file leaf-file-name="coupons.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/coupons.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="17" selection-start="5019" selection-end="5019" vertical-scroll-proportion="-25.375" vertical-offset="1011" max-vertical-offset="2760">
+            <state line="0" column="0" selection-start="0" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
               <folding />
             </state>
           </provider>
@@ -109,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="terms-of-use.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="terms-of-use.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/terms-of-use.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="368" column="17" selection-start="19133" selection-end="19133" vertical-scroll-proportion="0.73260075" vertical-offset="4920" max-vertical-offset="6660">
+            <state line="351" column="24" selection-start="18265" selection-end="18265" vertical-scroll-proportion="-14.375" vertical-offset="4920" max-vertical-offset="6660">
               <folding />
             </state>
           </provider>
@@ -138,7 +138,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/coupons.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/contact-us.html" />
         <option value="$PROJECT_DIR$/faq.html" />
@@ -148,6 +147,8 @@
         <option value="$PROJECT_DIR$/recipe.html" />
         <option value="$PROJECT_DIR$/recipes.html" />
         <option value="$PROJECT_DIR$/terms-of-use.html" />
+        <option value="$PROJECT_DIR$/coupons.html" />
+        <option value="$PROJECT_DIR$/css/coupons.css" />
       </list>
     </option>
   </component>
@@ -224,7 +225,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -319,23 +320,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/coupons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="132" column="17" selection-start="4897" selection-end="5845" vertical-scroll-proportion="-21.25" vertical-offset="1470" max-vertical-offset="3135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coupons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="17" selection-start="4989" selection-end="4989" vertical-scroll-proportion="-20.0" vertical-offset="1230" max-vertical-offset="2850">
           <folding />
         </state>
       </provider>
@@ -410,7 +397,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/terms-of-use.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="368" column="17" selection-start="19133" selection-end="19133" vertical-scroll-proportion="0.73260075" vertical-offset="4920" max-vertical-offset="6660">
+        <state line="351" column="24" selection-start="18265" selection-end="18265" vertical-scroll-proportion="-14.375" vertical-offset="4920" max-vertical-offset="6660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coupons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="47" selection-start="1034" selection-end="2562" vertical-scroll-proportion="-15.375" vertical-offset="231" max-vertical-offset="2850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/coupons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
           <folding />
         </state>
       </provider>
