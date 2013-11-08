@@ -14,7 +14,7 @@
     right: 0;
     bottom: 50px;
     width: 980px;
-    margin: 0 auto;
+    margin: -93px auto;
 }
 /**/
 .recipe .container {
@@ -49,8 +49,6 @@
 	background: #392727;
 	text-transform:uppercase;
 	border-left-width:0;
-	-webkit-border-top-left-radius: 0px;
-	-moz-border-radius-topleft: 0px;
 	border-top-left-radius: 0px;
 	margin-left:-3px;
 	position: relative;
@@ -65,36 +63,28 @@
 }
 .recipe .tab.active {
 	border-left-width:3px;
-	-webkit-border-top-left-radius: 20px;
-	-moz-border-radius-topleft: 20px;
 	border-top-left-radius: 20px;
 	border-color:#736d66;
 	position:relative;
 	top:10px;
 }
 .recipe .tab a {
-	x-padding: 10px 20px 10px 20px;
+
 	line-height: 45px;
 }
 .recipe .tab.active a {
-	x-padding: 20px 20px 10px 20px;
+
 	line-height: 60px;
 }
 .recipe .tab:first-child {
 	border-right-width:0;
-	-webkit-border-top-right-radius: 0;
-	-moz-border-radius-topright: 0;
 	border-top-right-radius: 0;
 	border-left-width:3px;
-	-webkit-border-top-left-radius: 20px;
-	-moz-border-radius-topleft: 20px;
 	border-top-left-radius: 20px;
 	margin-left:0;
 }
 .recipe .tab:first-child.active {
 	border-right-width:3px;
-	-webkit-border-top-right-radius: 20px;
-	-moz-border-radius-topright: 20px;
 	border-top-right-radius: 20px;
 }
 .recipe .tab:hover {
@@ -142,8 +132,6 @@
 	color:#ddccaa;
 	display:inline-block;
 	background-color:#1e1113;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
 	border-radius: 20px;
 	text-decoration:none;
 	text-transform:uppercase;
@@ -164,7 +152,6 @@
     display:inline-block;
 }
 .tabs a {
-    x-padding: 20px 20px 10px 20px;
     padding: 0 20px 0 20px;
     display: block;
     color: #a1a1a1;
@@ -176,16 +163,13 @@
 }
 .tab {
     border:3px solid #4b3d3b;
-    -webkit-border-radius: 20px 20px 0 0;
-    -moz-border-radius: 20px 20px 0 0;
+
     border-radius: 20px 20px 0 0;
     border-bottom: 0;
 }
 .tab-content {
     padding:0;
     border:3px solid #736d66;
-    -webkit-border-radius: 0px 20px 20px 20px;
-    -moz-border-radius: 0px 20px 20px 20px;
     border-radius: 0px 20px 20px 20px;
     display:none;
 }
