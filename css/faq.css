@@ -1,5 +1,7 @@
 .faq .content {
 	overflow-y:auto;
+	width:880px;
+	margin-left: -440px;
 }
 .faq .col {
 	float:left;
@@ -25,7 +27,7 @@
 	text-align:center;
 	text-transform:uppercase;
 	width:500px;
-	margin:60px auto;
+	margin:30px auto;
 	padding-top:30px;
 }
 .faq-contact p {
