@@ -74,13 +74,17 @@
 	line-height: 2em;
 	color:#a3cffe;
 }
-.gallery-controls .col, .gallery-controls legend  {
+.gallery-controls legend  {
 	float: left;
 	margin-right: 1em;
+}
+.gallery-controls .col {
+	float: left;
 }
 .gallery-controls .col.blue-dots {
 	background: url("../img/bg_recipes_controls.png") no-repeat left -48px;
 	padding-left:30px;
+	margin-left: 30px;
 }
 .gallery-controls legend {
 	color:#ddd1c6;
@@ -200,7 +204,6 @@
 	outline: 0; 
 }
 .selector {
-	padding: 0 0 0 12px;
 	position: relative;
 	overflow: hidden;
 }
