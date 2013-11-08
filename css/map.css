@@ -32,11 +32,13 @@
 	-moz-border-radius-bottomright: 10px;
 	border-top-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	text-transform:uppercase;
 }
 .map-ui h1 {
 	background:url(../img/bg_map_ui_h1.png) no-repeat center bottom;
 	color:#c2b59b;
 	font-size:16px;
+	font-weight:normal;
 	line-height:1.2em;
 	margin:20px 0 15px 0;
 	padding-bottom:26px;
@@ -46,11 +48,17 @@
 	color:#efe7d6;
 	display:block;
 	font-size:19px;
+	font-family:neutrafaceText-bold_alt, neutrafaceText-book_alt, Arial, Helvetica, sans-serif;
 }
 .map-ui .row {
 	margin-bottom:14px;
 }
-
+.map-ui .row label {
+	color:#ede5d6;
+}
+.map-ui .row label .size {
+	font-size:7px;
+}
 /* Common form control styles */
 .selector, .selector span, .checker span, .radio span, .button, .button span, .textfield, .textfield input {
 	background-image: url("../img/bg_map_controls.png");
@@ -116,6 +124,9 @@
 	cursor: pointer;
 	display: block; 
 	width:152px
+}
+.selector span.flavor {
+	font-family:neutrafaceText-bold_alt, neutrafaceText-book_alt, Arial, Helvetica, sans-serif;
 }
 .selector.fixedWidth {
 	width: 190px; 
