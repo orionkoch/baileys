@@ -2,7 +2,7 @@
 	background-color:#392727;
 }
 .recipes header {
-	margin: 4% 0 1% 220px;
+	margin:45px 0 0 240px;
 }
 .recipes .heading {
 	position:static;
@@ -12,18 +12,14 @@
 	text-align:left;
 	width:auto;
 }
-/*
 .recipes .content {
-	position: static;
-	margin-top: 2%;
-	height: 84%;
-}
-*/
-.recipes .content {
-	bottom:0;
-	top: 25%;
-	margin: 0 5%;
-	width: 90%;
+	position:absolute;
+	top:156px;
+	left:auto;
+	x-bottom:50px;
+	width:90%;
+	margin:0 5% 0 5%;
+	x-overflow-y:scroll;
 }
 /* .content-scroll
  * Need a container with a height set on it
@@ -76,6 +72,7 @@
 .gallery-controls {
 	margin: 1em auto 1em 2%;
 	line-height: 2em;
+	color:#a3cffe;
 }
 .gallery-controls .col, .gallery-controls legend  {
 	float: left;
@@ -285,10 +282,11 @@
 }
 .recipes .gallery-item:hover .gallery-item-link {
 	color:#000000;
-	background: rgba(255,255,255,.5);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF)"; /* IE8 */
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF);   /* IE6 & 7 */
-	font-size:1em;
-	zoom: 1;
+	font-family:neutrafaceText-bold_alt, neutrafaceText-book_alt, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	background: rgba(255,255,255,.8);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);   /* IE6 & 7 */
+    zoom: 1;
 }
 
