@@ -23,7 +23,7 @@
 	font-size: 30px;
 }
 .recipe .content {
-	overflow-y: auto;
+	/*overflow-y: auto;*/
 }
 .recipe .left-col {
 	position:absolute;
