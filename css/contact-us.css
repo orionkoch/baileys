@@ -38,10 +38,10 @@
 
 @media handheld, screen and (max-width:800px) {
 	.contact-us .heading {
-		x-margin-top: 210px;
+
 	}
 	.contact-us .content {
-		overflow-y: auto;
+		/*overflow-y: auto;*/
 	}
 	.contact-us .content section {
 		clear:left;
