@@ -41,9 +41,22 @@
     width:33%;
     line-height:1em;
     text-transform:uppercase;
+	-webkit-transition: margin-top 200ms; 
+    -moz-transition: margin-top 200ms; 
+    -ms-transition: margin-top 200ms; 
+    -o-transition: margin-top 200ms; 
+    transition: margin-top 200ms; 
 }
 .promo1-link:first-child {
     margin-left:0;
+}
+.promo1-link:hover {
+	margin-top:-3px;
+	-webkit-transition: margin-top 200ms; 
+    -moz-transition: margin-top 200ms; 
+    -ms-transition: margin-top 200ms; 
+    -o-transition: margin-top 200ms; 
+    transition: margin-top 200ms; 
 }
 .promo1-link span {
     display:block;
