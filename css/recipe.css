@@ -6,15 +6,15 @@
 /**/
 
 .content {
-    color: #dac7a2;
-    font-size: 13px;
-    position: absolute;
-    top: 36%;
-    left: 0;
-    right: 0;
-    bottom: 50px;
-    width: 980px;
-    margin: -93px auto;
+    /*color: #dac7a2;*/
+    /*font-size: 13px;*/
+    /*position: absolute;*/
+    /*top: 36%;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 50px;*/
+    /*width: 980px;*/
+    /*margin: -93px auto;*/
 }
 /**/
 .recipe .container {
@@ -22,7 +22,7 @@
 }
 .recipe .heading {
 	width:600px;
-	margin-left:-300px;
+
 	background:none;
 	padding-bottom:0;
 }

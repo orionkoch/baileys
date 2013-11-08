@@ -36,112 +36,7 @@
 	float: left;
 }
 
-@media handheld, screen and (max-width:800px) {
-	.contact-us .heading {
 
-	}
-	.contact-us .content {
-		/*overflow-y: auto;*/
-	}
-	.contact-us .content section {
-		clear:left;
-		
-	}
-	.contact-us #contact-us_form {
-		width: 100%;
-	}
-	.contact-us #contact-us_form fieldset {
-		width: 100%;
-		float: left;
-		clear: left;
-	}
-	textarea.comment {
-		display: block;
-		height: 4em;
-		margin: 0.5em auto;
-		/*	To override below max and min rules.	*/
-		max-width: 90%;
-		min-width: 90%;
-	}
-}
-@media screen and (min-width:801px) and (max-width:1824px) {
-	.contact-us .heading {
-
-	}
-	.contact-us .heading span {
-
-	}
-	.contact-us .content {
-		/*overflow-y: auto;*/
-	}
-	.contact-us section.blurb {
-		width: 33.333%;
-		float: left;
-	}
-	.contact-us section.form-container {
-		float: left;
-		width: 66.666%;
-		}
-	.contact-us #contact-us_form fieldset.data-box {
-		min-width: 25em;
-		float: left;
-		margin: 0 0 0 2%;
-	}
-	.contact-us #contact-us_form fieldset.submission-box {
-		min-width: 26em;
-		margin: 2%;
-		float: left;
-	}
-	.contact-us #contact-us_form textarea.comment {
-		min-width: 96%;
-		min-height: 5em;
-	}
-}
-@media screen and (min-width:1824px) {
-	.contact-us .heading {
-
-	}
-	.contact-us .heading span {
-
-	}
-	.contact-us .content {
-		
-	}
-	.contact-us section.blurb {
-		width: 25%;
-		float:left;
-	}
-	.contact-us section.form-container {
-		width: 75%;
-		float: right;
-
-	}
-	.contact-us #contact-us_form fieldset.data-box {
-		width: 66.666%;
-		position: relative;
-		float: left;
-	}
-	.data-box .col-l {
-		width: 48%;
-		float: left;
-	}
-	.data-box .col-r {
-		width: 48%;
-		position: absolute;
-		top: 0;
-		right: 2%;
-		height: 100%;
-	}
-	.contact-us #contact-us_form fieldset.submission-box {
-		position: relative;
-		float: right;
-		width: 33.333%;
-	}
-	.contact-us #contact-us_form textarea.comment {
-		height: 60%;
-		min-width: 90%;
-	}
-}
 .contact-us .content {
 
 }
@@ -234,4 +129,4 @@ div.captcha {
 	text-transform:uppercase;
 }
 
-/********/
+/**********/
