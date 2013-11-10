@@ -86,7 +86,7 @@
 	margin-top:61px;
 }
 .recipe .tab.active {
-	border-left-width:3px;
+	border-left-width:2px;
 	border-top-left-radius: 20px;
 	border-color:#736d66;
 	position:relative;
@@ -105,12 +105,12 @@
 .recipe .tab:first-child {
 	border-right-width:0;
 	border-top-right-radius: 0;
-	border-left-width:3px;
+	border-left-width:2px;
 	border-top-left-radius: 20px;
 	margin-left:0;
 }
 .recipe .tab:first-child.active {
-	border-right-width:3px;
+	border-right-width:2px;
 	border-top-right-radius: 20px;
 }
 .recipe .tab:hover {
@@ -140,8 +140,8 @@
 
 
 .tab-content {
-    padding: 0;
-    border: 3px solid #736d66;
+    padding: 0 29px 0 0;
+    border: 2px solid #736d66;
     border-radius: 0px 20px 20px 20px;
     display: none;
 }
@@ -172,16 +172,17 @@
 }
 
 .recipe .printBtn {
-    position: relative;
-    float: right;
+
     font-size: 12px;
-    top:-20px;
-    left: -30px;
+
 }
 .recipe .printBtn a{
-
     color: #a3cffe;
     text-decoration: none;
+    position: absolute;
+    top: -14px;
+    left: 147px;
+    z-index: 999;
 
 }
 .recipe .printBtn a:hover{
