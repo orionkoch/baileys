@@ -2,7 +2,6 @@
 body {
     width: 100%;
     height: 100%;
-    overflow: scroll;
     border: 0;
     padding: 0;
 }
@@ -48,7 +47,8 @@ body {
 
 
 .contact-us .content {
-    width: 1170px;
+    width: auto;
+    overflow: scroll;
 
 }
 .contact-us .social {
