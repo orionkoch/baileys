@@ -135,5 +135,18 @@ div.captcha {
 	color:#fff;
 	text-transform:uppercase;
 }
+.contact-us #contact-us_form div#contact_form-product_UPC-callout {
+    margin: 0 0 0 96px;
 
+}
+.contact-us #contact-us_form div#contact_form-product_UPC-callout img {
+    margin: 10px;
+    float: left;
+
+}
+.contact-us #contact-us_form div#contact_form-product_UPC-callout p {
+    margin: 0 0 0 0;
+    width: 300px;
+
+}
 /**********/
