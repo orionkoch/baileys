@@ -16,6 +16,7 @@ body {
 .contact-us section.blurb {
 	width: 288px;
 	float: left;
+    margin: 0 0 0 -34px;
 }
 .contact-us section.form-container {
 	float: left;
@@ -23,6 +24,7 @@ body {
 }
 .contact-us #contact-us_form fieldset.data-box {
 	float: left;
+    margin: 0 52px 0 -45px;
 }
 .contact-us #contact-us_form fieldset.submission-box {
 	float: left;
@@ -72,7 +74,7 @@ body {
 .contact-us #contact-us_form button, input, select, textarea, select, option {
 	vertical-align: middle;
 }
-.contact-us input[type="text"],input[type="tel"],input[type="date"],textarea,select {
+.contact-us input[type="text"],input[type="tel"],input[type="date"],select {
 	max-width: 50%;
 	min-width: 13em;
 	border: 1px inset #666;
@@ -85,6 +87,20 @@ body {
 	line-height: 2;
 	padding: 0 .5em;
 	margin-right: .25em;
+}
+
+.contact-us textarea {
+    max-width: 50%;
+    min-width: 13em;
+    border: 1px inset #666;
+    background: #1f1f1f;
+    color: #e0e0e0;
+    resize: none;
+    border-radius: .5em;
+    background-clip: border-box;
+    line-height: 2;
+    padding: 0 .5em;
+    margin-right: .25em;
 }
 .contact-us input[type=submit] {
 	background: #3b5c6d;
