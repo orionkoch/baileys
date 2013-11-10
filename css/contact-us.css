@@ -23,11 +23,11 @@ body {
 }
 .contact-us #contact-us_form fieldset.data-box {
 	float: left;
-    margin: 0 52px 0 -45px;
+    margin: 0 50px 0 -45px;
 }
 .contact-us #contact-us_form fieldset.submission-box {
 	float: left;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 -20px;
 }
 .contact-us .content {
 	/*overflow-y: auto;*/
@@ -47,8 +47,8 @@ body {
 
 
 .contact-us .content {
-    width: 1020px;
-    overflow: scroll;
+    width: 980px;
+    /*overflow: scroll;*/
 
 }
 .contact-us .social {
