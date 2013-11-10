@@ -14,18 +14,19 @@ body {
 	margin-top:0;
 }
 .contact-us section.blurb {
-	width: 33.333%;
+	width: 288px;
 	float: left;
 }
 .contact-us section.form-container {
 	float: left;
-	width: 66.666%;
+
 }
 .contact-us #contact-us_form fieldset.data-box {
 	float: left;
 }
 .contact-us #contact-us_form fieldset.submission-box {
 	float: left;
+    margin: 0 0 0 30px;
 }
 .contact-us .content {
 	/*overflow-y: auto;*/
@@ -45,6 +46,7 @@ body {
 
 
 .contact-us .content {
+    width: 1170px;
 
 }
 .contact-us .social {
