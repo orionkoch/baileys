@@ -703,12 +703,19 @@ h2.site-search-h2 {
 	-webkit-border-radius: 1em;
 	position: relative;
 	margin: 0 auto;
+	padding:60px 20px 40px 20px;
 	top: 50%;
 	left:50%;
 	z-index: 101;
 	background: lightgray;
-	display: inline-block;
 	cursor: default;
+	width:620px;
+	height:420px;
+	overflow:hidden;
+}
+.modal-box .modal-content {
+	overflow-y:scroll;
+	height:440px;
 }
 .modal-box .close-box {
 	background: url(../img/bg_dialog_close.png) no-repeat;
@@ -760,6 +767,7 @@ h2.site-search-h2 {
 	background: #d1c5ba;
 	padding:28px;
 	width: 480px;
+	height:auto;
 	text-align: left;
 	top:0;
 	left:0;
