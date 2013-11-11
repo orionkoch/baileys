@@ -13,9 +13,15 @@ body {
 	margin-top:0;
 }
 .contact-us section.blurb {
-	width: 288px;
+	width: 292px;
 	float: left;
     margin: 0 0 0 0;
+}
+
+.contact-us section.blurb h2 {
+    color: #f9f6f0;
+    font-size: 18px;
+    margin-top: 0;
 }
 .contact-us section.form-container {
 	float: left;
@@ -23,7 +29,7 @@ body {
 }
 .contact-us #contact-us_form fieldset.data-box {
 	float: left;
-    margin: 0 39px 0 -55px;
+    margin: 0 39px 0 0px;
 }
 .contact-us #contact-us_form fieldset.submission-box {
 	float: left;
@@ -46,7 +52,7 @@ body {
 
 .contact-us .content {
     width: 980px;
-    padding: 0 30px 100px 0;
+    padding: 0 30px 30px 0;
 
 
 }
@@ -103,12 +109,12 @@ body {
 }
 .contact-us input[type=submit] {
 	background: #3b5c6d;
-	border-radius: 20px;
+	border-radius: 14px;
 	text-transform: uppercase;
 	border: none;
 	margin: 0;
 	color: #fff;
-	padding:7px 20px;
+	padding:0px 20px;
 	line-height:2em;
 
 }
@@ -136,16 +142,16 @@ body {
 	line-height: 2;
 	padding: 0 .5em;
 }
-.contact-us #contact-us_form label.radio {
-	text-align: left;
-	display: block;
-}
-.contact-us #contact-us_form label.radio>input[type="radio"]{
-	margin-right: .25em;
-}
-div.captcha {
+/*.contact-us #contact-us_form label.radio {*/
+	/*text-align: left;*/
+	/*display: block;*/
+/*}*/
+/*.contact-us #contact-us_form label.radio>input[type="radio"]{*/
+	/*margin-right: .25em;*/
+/*}*/
+div#captchadiv {
 	margin: 1em auto;
-	width: 330px;
+	width: 300px;
 }
 .contact-us #email-signup legend {
 	font-size:13px;
@@ -153,18 +159,31 @@ div.captcha {
 	text-transform:uppercase;
 }
 .contact-us #contact-us_form div#contact_form-product_UPC-callout {
-    margin: 0 0 0 96px;
+
+    position: relative;
+    left: 160px;
+    top: 5px;
+
+}
+
+.contact-us #contact-us_form div#contact_form-product_UPC-callout img {
+    margin: 0 0 0 0;
 
 }
 .contact-us #contact-us_form div#contact_form-product_UPC-callout img {
-    margin: 10px;
+    width: 66px;
+    height: 39px;
     float: left;
+    margin-right: 5px;
 
 }
 .contact-us #contact-us_form div#contact_form-product_UPC-callout p {
     margin: 0 0 0 0;
-    width: 300px;
+    width: 150px;
     color: white;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-family: Helvetica, Arial, sans-serif;
 
 }
 .recaptchatable #recaptcha_response_field {
@@ -175,5 +194,80 @@ div.captcha {
     margin: 15px 0 0 0!important;
     font-size: 10pt;
 }
+
+
+/* Common form control styles */
+.selector, .selector span, .checker span, .radio span, .button, .button span, .textfield, .textfield input {
+    background-image: url("../img/bg_map_controls.png");
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
 }
-/**********/
+.selector, .checker, .button, .radio, .uploader {
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    /* Keeping this as :focus to remove browser styles */
+}
+.selector:focus, .checker:focus, .button:focus, .radio:focus, .uploader:focus {
+    outline: 0;
+}
+.selector, .selector *, .radio, .radio *, .checker, .checker *, .uploader, .uploader *, .button, .button * {
+    margin: 0;
+    padding: 0;
+/* Radio buttons*/
+.radio {
+    position: relative;
+}
+.radio, .radio span, .radio input {
+    width: 23px;
+    height: 23px;
+}
+.radio span {
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: center;
+    background-position: 6px -118px;
+}
+.radio span.checked {
+    background-position: -17px -117px;
+}
+.radio input {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    border: none;
+    background: none;
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: center;
+}
+.radio.active span {
+    background-position: -23px -18px -343px;
+}
+.radio.active span.checked {
+    background-position: -115px -343px;
+}
+.radio.hover span, .radio.focus span {
+    background-position: -46px -36px -343px;
+}
+.radio.hover span.checked, .radio.focus span.checked {
+    background-position: -138px -343px;
+}
+.radio.hover.active span, .radio.focus.active span {
+    background-position: -69px -343px;
+}
+.radio.hover.active span.checked, .radio.focus.active span.checked {
+    background-position: -161px -343px;
+}
+.radio.disabled span, .radio.disabled.active span {
+    background-position: -184px -343px;
+}
+.radio.disabled span.checked, .radio.disabled.active span.checked {
+    background-position: -207px -343px;
+}
