@@ -29,9 +29,7 @@ body {
 	float: left;
     margin: 0 0 0 -20px;
 }
-.contact-us .content {
-	/*overflow-y: auto;*/
-}
+
 .contact-us .col-r  {
 	padding: .25em 0 0 0;
 }
@@ -47,8 +45,8 @@ body {
 
 
 .contact-us .content {
-    margin: 0 auto;
-    width: 980px;
+    margin: 0;
+    width: 100%;
 
 
 }
@@ -171,21 +169,21 @@ div.captcha {
 }
 
 .section1 {
-    width: 33%;
+    width: 325px;
     position: relative;
     float: left;
 
 }
 .section2 {
-    width: 33%;
+    width: 325px;
     position: relative;
-    float: left;
+    float: right;
 
 }
 .section3 {
-    width: 33%;
+    width: 325px;
     position: relative;
-    float: left;
+    float: right;
 
 }
 /**********/
