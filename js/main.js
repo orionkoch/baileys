@@ -521,7 +521,7 @@ function baileysSliderClass()
 		var currentSlideLeft = browserWidth,
 			newSlideLeft = 0;
 		
-		if (direction == 'left') 
+		if (direction == 'left')
 		{
 			newSlide = currentSlide > 0 ? (currentSlide - 1) : slideCount;
 			currentSlideLeft = (-1 * browserWidth);
