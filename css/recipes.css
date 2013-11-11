@@ -110,6 +110,9 @@
 	margin:0 5px 0 0;
 	padding:0;
 }
+.checkbox {
+	margin-top:-4px;
+}
 .checkbox input {
 	opacity: 0;
 	filter: alpha(opacity=0);
