@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/contact-us.css" charset="utf-8" />
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+
 </head>
 
 <body class="contact-us">
@@ -312,10 +313,28 @@
   <!-- end .....border -->
 
   <script src="js/vendor/jquery-1.10.1.min.js"></script>
+  <script src="js/jquery.nicescroll.js"></script>
   <script src="js/vendor/jquery.touchSwipe.min.js"></script>
   <script src="js/vendor/jquery.easing.1.3.js"></script>
   <script src="js/main.js"></script>
   <script>
+
+      $(document).ready(
+              function() {
+                  $(".content").niceScroll({
+                      cursorcolor:"#3B5C6D",
+                      cursorborder: "#777",
+                      cursorwidth: "12px",
+                      scrollspeed: "400",
+                      background: "#333",
+                      bouncescroll: "true",
+
+
+
+
+                  });
+              }
+      );
 	var objMenu = new baileysMenuClass(),
 		objPage = new baileysSubpageClass(),
 		objIntro = new baileysIntroClass();
@@ -326,7 +345,11 @@
 		objMenu.init();
 		objPage.init();
         Recaptcha.create("6Lfq8ukSAAAAAGenFYuHJCo_N_nhAPbE7eFOUImo","captchadiv",{theme: "blackglass"});
+
+
 	});
+
+
   </script>
 
 </body>
