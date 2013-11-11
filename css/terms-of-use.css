@@ -1,8 +1,19 @@
+.terms-of-use{
+	padding:10px;
+}
+
+.terms-of-use{
+	color: #333;
+}
+
 .terms-of-use .constrain {
 	width:500px;
 }
 .terms-of-use .content {
 	overflow-y:auto;
+	line-height: 12px;
+	color: #333;
+	font-size: 11px;
 }
 .terms-of-use a {
 	color:#fff;
