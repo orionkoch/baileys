@@ -469,6 +469,7 @@ nav .secondary a:hover {
 nav .menu_two{
 	/*position: absolute;*/
 	/*bottom: 170px;*/
+    margin: 20px 0 0 0;
 }
 nav .menu_two a:hover{
 	color:#a3cffe;
