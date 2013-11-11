@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea167917-b36c-4428-b921-2cdfec78a5c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/contact-us.css" afterPath="$PROJECT_DIR$/css/contact-us.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="baileys.iws" />
@@ -26,48 +26,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contact-us.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contact-us.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/contact-us.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="280" column="2" selection-start="6004" selection-end="6004" vertical-scroll-proportion="0.8865069" vertical-offset="3497" max-vertical-offset="4290">
+            <state line="8" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4320">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact-us.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contact-us.html">
+      <file leaf-file-name="recipe.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recipe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="316" column="56" selection-start="18120" selection-end="18120" vertical-scroll-proportion="-153.16667" vertical-offset="1064" max-vertical-offset="5475">
-              <folding>
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#7;n#div#0;n#fieldset#0;n#form#0;n#section#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="35" selection-start="7451" selection-end="7484" vertical-scroll-proportion="50.041668" vertical-offset="3976" max-vertical-offset="4770">
+            <state line="40" column="0" selection-start="1528" selection-end="1528" vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="3525">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/map.js">
+      <file leaf-file-name="recipe.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/recipe.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/map.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="203" column="1" selection-start="4353" selection-end="5611" vertical-scroll-proportion="0.0" vertical-offset="2152" max-vertical-offset="3135">
+            <state line="8" column="22" selection-start="121" selection-end="121" vertical-scroll-proportion="0.14669926" vertical-offset="0" max-vertical-offset="3360">
               <folding />
             </state>
           </provider>
@@ -101,12 +81,13 @@
         <option value="$PROJECT_DIR$/coupons.html" />
         <option value="$PROJECT_DIR$/css/coupons.css" />
         <option value="$PROJECT_DIR$/css/index.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/recipe.html" />
-        <option value="$PROJECT_DIR$/css/recipe.css" />
         <option value="$PROJECT_DIR$/map.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/contact-us.html" />
         <option value="$PROJECT_DIR$/css/contact-us.css" />
+        <option value="$PROJECT_DIR$/recipe.html" />
+        <option value="$PROJECT_DIR$/css/recipe.css" />
       </list>
     </option>
   </component>
@@ -200,8 +181,8 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" uploadOnCheckin="9891b5e6-17f5-44ba-9748-e12953981e83">
     <servers>
@@ -456,17 +437,56 @@
       <created>1384192717823</created>
       <updated>1384192717823</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Changed flyout menu in order to position the links as per Gabes request">
+      <created>1384193303112</created>
+      <updated>1384193303112</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Changed flyout menu in order to position the links as per Gabes request">
+      <created>1384193437351</created>
+      <updated>1384193437351</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Changed flyout menu in order to position the links as per Gabes request">
+      <created>1384193494616</created>
+      <updated>1384193494616</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Changed flyout menu in order to position the links as per Gabes request">
+      <created>1384193651803</created>
+      <updated>1384193651803</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Changed flyout menu in order to position the links as per Gabes request">
+      <created>1384193993217</created>
+      <updated>1384193993218</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Changed flyout menu in order to position the links as per Gabes request">
+      <created>1384194079738</created>
+      <updated>1384194079738</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Changed flyout menu in order to position the links as per Gabes request">
+      <created>1384194222064</created>
+      <updated>1384194222064</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Changed flyout menu in order to position the links as per Gabes request">
+      <created>1384194683139</created>
+      <updated>1384194683139</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Changed flyout menu in order to position the links as per Gabes request">
+      <created>1384195114729</created>
+      <updated>1384195114729</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Made Gabes changes to recipe.html">
+      <created>1384197387415</created>
+      <updated>1384197387416</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="104" y="22" width="1816" height="967" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -476,11 +496,12 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821724" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22907239" sideWeight="0.6717828" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23190045" sideWeight="0.67060214" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -511,27 +532,14 @@
     <MESSAGE value="contact us over flow" />
     <MESSAGE value="Fixed the blurb text not showing and removed bottom curve" />
     <MESSAGE value="Final touches on line heights for buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final touches on line heights for buttons" />
+    <MESSAGE value="Changed flyout menu in order to position the links as per Gabes request" />
+    <MESSAGE value="Made Gabes changes to recipe.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Gabes changes to recipe.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/coupons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="3135" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recipe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="24" selection-start="4131" selection-end="4131" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="3510" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="0" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.5860806" vertical-offset="375" max-vertical-offset="2970" />
@@ -542,11 +550,6 @@
         <state line="356" column="0" selection-start="4748" selection-end="4820" vertical-scroll-proportion="0.21091811" vertical-offset="5170" max-vertical-offset="102300" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/recipe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="101" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3120" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/PhpstormProjects/Baileys/contact-us.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="33" selection-start="950" selection-end="1048" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="5055" />
@@ -554,9 +557,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../baileys-gh-pages/contact-us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="4" selection-start="11729" selection-end="11729" vertical-scroll-proportion="37.541668" vertical-offset="4036" max-vertical-offset="5055">
-          <folding />
-        </state>
+        <state line="209" column="4" selection-start="11729" selection-end="11729" vertical-scroll-proportion="37.541668" vertical-offset="4036" max-vertical-offset="5055" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/coupons.html">
@@ -568,16 +569,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../baileys-bck/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="19" selection-start="1443" selection-end="8865" vertical-scroll-proportion="-27.5" vertical-offset="1530" max-vertical-offset="4230">
-          <folding />
-        </state>
+        <state line="146" column="19" selection-start="1443" selection-end="8865" vertical-scroll-proportion="-27.5" vertical-offset="1530" max-vertical-offset="4230" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../baileys-bck/contact-us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/map.css">
@@ -596,23 +593,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="35" selection-start="7451" selection-end="7484" vertical-scroll-proportion="50.041668" vertical-offset="3976" max-vertical-offset="4770">
+        <state line="185" column="35" selection-start="7451" selection-end="7484" vertical-scroll-proportion="0.0" vertical-offset="3976" max-vertical-offset="4770">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="470" column="14" selection-start="9388" selection-end="9390" vertical-scroll-proportion="0.0" vertical-offset="5797" max-vertical-offset="15045">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contact-us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="316" column="56" selection-start="18120" selection-end="18120" vertical-scroll-proportion="-153.16667" vertical-offset="1064" max-vertical-offset="5475">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#7;n#div#0;n#fieldset#0;n#form#0;n#section#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="26" column="9" selection-start="1037" selection-end="1037" vertical-scroll-proportion="178.66667" vertical-offset="4678" max-vertical-offset="5475">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/contact-us.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="280" column="2" selection-start="6004" selection-end="6004" vertical-scroll-proportion="0.8865069" vertical-offset="3497" max-vertical-offset="4290">
+        <state line="8" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="0" selection-start="4685" selection-end="4685" vertical-scroll-proportion="0.47229218" vertical-offset="1290" max-vertical-offset="2835">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1528" selection-end="1528" vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="3525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/recipe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="121" selection-end="121" vertical-scroll-proportion="0.14669926" vertical-offset="0" max-vertical-offset="3360">
           <folding />
         </state>
       </provider>
