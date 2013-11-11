@@ -260,6 +260,7 @@ function baileysMenuClass()
 		$tabsnav   = $('.tab-anchor'),
 		$panels    = $('.tab-panel'),
 		$container = $('.container'),
+		$flavorbar = $('.flavor-bar'),
 		$leftRightNav = $('.nav-left, .nav-right'),
 
 		$gal       = $("#nav-clip"),
@@ -416,6 +417,19 @@ function baileysMenuClass()
 		}
 
 		$container.animate({left: left, right: right }, 300, 'easeInOutCirc');
+
+		// A specific condition for the flavor page.
+		if($flavorbar.length > 0) 
+		{
+			var newleft = (direction=='right') ? ($flavorbar.position().left + openDistance) : ($flavorbar.position().left + left);
+			$flavorbar.animate({left: newleft }, 300, 'easeInOutCirc', function()
+			{
+				if(direction=='right') { 
+					$flavorbar.attr('style','');
+					console.log('right');
+				}
+			});
+		}
 	}
 	
 	/**

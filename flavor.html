@@ -14,23 +14,6 @@
   <link rel="stylesheet" href="css/jquery.qtip.min.css">
   <link rel="stylesheet" href="css/flavor.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  <style>
-	/*
-	* TEMPORARY STYLES
-	* to be removed in production.
-    * Shows how a flavor is selected in the flavor bar
-	* when a user first gets to a flavor page.
-	*/
-	.flavor.active {
-		margin-top:0px;
-	}
-	/*
-	or use this CSS routing technique.
-	.white-choc-raspberry-swirl .active {
-		margin-top:-30px;
-	}
-	*/
-  </style>
 </head>
 
 <body class="flavor-page white-choc-raspberry-swirl">
@@ -45,6 +28,7 @@
     <div class="container">
 
       <div class="product-photo"></div>
+      <a href="#" title="View Recipes" class="btn-view-recipes"><img src="img/btn_view_recipes.png" width="157" height="39" alt="View Recipes"></a>
 
       <div class="product-desc">
         <h1 class="heading">
@@ -55,7 +39,7 @@
           it up with the sweetest of berry flavors. Bam. White Chocolate Raspberry Swirl – 
           straight from our delicious imagination to your cup.
          </p>
-         <p>Available in 16oz. and 32 oz.</p>
+         <p class="available-sizes">Available in 16oz. and 32 oz.</p>
          <a href="map.html" id="btn-where-to-buy" class="border-blue where"><span>Where to Buy</span></a>
          <a href="#nutrition-info" id="btn-nutrition-info" class="border-blue"><span>Nutritional Info</span></a>
       </div>
@@ -64,7 +48,7 @@
         <div class="product-rating row-social clearfix">
           <div class="rating-stars clearfix">
             <span class="header">Baileys Fan's Flavor Rating</span>
-            <div id="rating-stars" data-productid="123" data-rateit-step="1" data-rateit-resetable="false" data-rateit-ispreset="true"></div>
+            <div id="rating-stars" data-productid="123" data-rateit-step="1" data-rateit-resetable="false" data-rateit-ispreset="true" data-rateit-value="3"></div>
           </div>
           <span class="rating-counter">233</span>
         </div>
