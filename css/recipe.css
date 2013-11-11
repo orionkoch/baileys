@@ -54,6 +54,9 @@
     text-decoration: none;
     font-size: 20px;
 }
+.recipe .tabs a.ingredients {
+	padding-right:22px;
+}
 
 /****.recipe .tab span {*/
     /*position: relative;*/
@@ -128,7 +131,7 @@
     background: url(../img/bg_recipe_home.png) no-repeat 0px 3px;
     border: none;
     position: relative;
-    left: 477px;
+    left: 400px;
     top: -36px;
 }
 .recipe .tab.recipe-home a {
