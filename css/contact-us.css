@@ -15,7 +15,7 @@ body {
 .contact-us section.blurb {
 	width: 288px;
 	float: left;
-    margin: 0 0 0 -34px;
+    margin: 0 0 0 0;
 }
 .contact-us section.form-container {
 	float: left;
@@ -23,7 +23,7 @@ body {
 }
 .contact-us #contact-us_form fieldset.data-box {
 	float: left;
-    margin: 0 50px 0 -55px;
+    margin: 0 39px 0 -55px;
 }
 .contact-us #contact-us_form fieldset.submission-box {
 	float: left;
