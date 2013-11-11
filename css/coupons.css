@@ -51,6 +51,21 @@
 	color: #fff;
 	text-transform: uppercase;
 }
+
+#coupon .txt-site-search {
+    border: 2px solid #fff;
+    color: white;
+    font-size: 20px;
+    background-color: #000000;
+    width: 300px;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+#coupon .txt-site-search:hover{
+    border:2px solid #2ea8ef;
+}
 .coupons #email-signup input[type=submit] {
 	background: #3b5c6d;
 	border-radius: 20px;
