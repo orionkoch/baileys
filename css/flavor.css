@@ -21,7 +21,7 @@ body, html{
 .flavor-page .heading span {
 	color:#b18f64;
 	display:block;
-	font-size:24px;
+	font-size:10px;
 	line-height:1em;
 }
 .product-photo {
@@ -36,10 +36,11 @@ body, html{
 }
 .product-desc {
 	position: absolute;
-	top: 14%;
+	top: 113px;
 	width: 26%;
 	right: 32.5%;
 	color:#fff;
+	font-size:13px;
 	z-index: 12;
 	min-width: 275px;
 	padding-bottom: 10px;
@@ -51,7 +52,7 @@ body, html{
         transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 .product-desc:hover {
-	top: 13.5%;
+	top: 110px;
 	-webkit-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
    -moz-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
     -ms-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
@@ -61,7 +62,7 @@ body, html{
 .product-social {
 	width: 20%;
 	position: absolute;
-	bottom: 12%;
+	bottom: 100px;
 	right: 8%;
 	z-index: 12;
 	min-width: 240px;
@@ -73,13 +74,16 @@ body, html{
         transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 .product-social:hover {
-	bottom: 11.5%;
+	bottom: 103px;
 	cursor: pointer;
 		-webkit-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
    -moz-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
     -ms-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
      -o-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
         transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.product-desc .available-sizes {
+	text-transform:uppercase;
 }
 
 .border-blue {
@@ -158,6 +162,8 @@ body, html{
 	color:white;
 	display:block;
 	margin-bottom: 11px;
+	text-transform: uppercase;
+	font-size: 11px;
 }
 .rating-stars {
 	display: block;
@@ -176,7 +182,7 @@ body, html{
 	font-size:16px;
 }
 .product-social-activity p {
-	color:#ffffff;
+	color:#857c81;
 	font-size:10px;
 	margin:0;
 }
@@ -225,6 +231,10 @@ body, html{
 	margin-top:0px;
 	cursor: pointer;
 }
+.flavor.active {
+	margin-top:10px;
+}
+
 
 .qtip-baileys {
 	border-width:2px;
