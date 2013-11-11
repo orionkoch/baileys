@@ -131,7 +131,9 @@ if (!Array.prototype.indexOf)
                     var margin_left  ,
                     	margin_top   ,
 						$modal       ,
-						$overlay     = $("#modal-overlay");
+						$overlay     = $("#modal-overlay"),
+						url          ='',
+						firstChar    ='';
 
                     e.preventDefault();
 
@@ -150,9 +152,36 @@ if (!Array.prototype.indexOf)
 						});
 						$modal.find('.continue-link').attr('href',this.href);
 					}
-					else {
-						$modal = $($(this).attr('href'));
+					else 
+					{
+						$modal    = $($(this).attr('href'));
+						url       = $(this).attr('href');
+						firstChar = url.charAt(0);
+						
+						//If not an internal anchor then its external, fetch via ajax.
+						if(firstChar != '#')
+						{
+							if($('#ajax-modal').length==0) 
+							{
+								$modal = $('<div id="ajax-modal" class="modal-box" role="dialog" aria-describedby="ajax-modal" style="display:none"><span class="close-box"></span><div class="modal-content"></div></div>');
+								$('body').append($modal);
+							}
+							
+							$modal = $('#ajax-modal');
+							
+							$.ajax({
+								url: url,
+								cache: false
+							})
+							.done(function( html ) {
+								
+								$modal.find('.modal-content').html(html);
+								$modal.show();
+								
+							});
+						}
 					}
+					
 					
                    	margin_left = -($modal.outerWidth() / 2) + 'px';
                     margin_top  = -($modal.outerHeight()/ 2) + 'px';
@@ -928,6 +957,7 @@ function baileysIntroClass()
 		  });
 		  
 		$('.external-link').modal();
+		$('.modal').modal({closeButton:'.close-box'});
 	}
 }
 

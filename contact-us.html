@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/contact-us.css" charset="utf-8" />
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+
 </head>
 
 <body class="contact-us">
@@ -148,13 +149,13 @@
                 <div>
                   <label for="contact_form-product_UPC">Product UPC</label>
                   <input class="glow" type="text" length="10" pattern="[0-9]{10}" name="product_UPC" value="" id="contact_form-product_UPC" placeholder="1111111111" />
-                  <span id="contact_form-product_UPC-callout" style="display:none">
-                    <img src="http://baileyscreamers.com/images/global/UPCSample.gif" class="left" />
+                  <div id="contact_form-product_UPC-callout">
+                    <img src="http://baileyscreamers.com/images/global/UPCSample.gif" />
                     <p>Enter only the (10) digits shown within each red bracket (do not include spaces or dashes)</p>
-                  </span>
+                  </div>
                 </div>
                 <div>
-                  <label for="description">Description</label>
+                  <label style="position: relative; left: -190px; top: 28px;" for="description">Description</label>
                   <input class="glow" type="text" name="description" value="" id="contact_form-description" placeholder="" />
                 </div>
                 <div>
@@ -172,7 +173,7 @@
                   <div>
                       <label for="comment">Comments</label>
 
-                      <textarea class="glow" id="comment" name="comment" cols="40" rows="5" placeholder="Type your comments here" required></textarea>
+                      <textarea class="glow" id="comment" name="comment" rows="4" cols="22" placeholder="Type your comments here" required></textarea>
 
                   </div>
               </div>
@@ -280,8 +281,8 @@
           <ul class="secondary clearfix">
             <li><a href="about.html">About</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
-            <li><a href="terms-of-use.html">Terms of Use</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html" class="modal">Terms of Use</a></li>
+            <li><a href="privacy-policy.html" class="modal">Privacy Policy</a></li>
           </ul>
 
           <a class="canada_link" href="#">Canadian Products</a>
@@ -312,10 +313,28 @@
   <!-- end .....border -->
 
   <script src="js/vendor/jquery-1.10.1.min.js"></script>
+  <script src="js/jquery.nicescroll.js"></script>
   <script src="js/vendor/jquery.touchSwipe.min.js"></script>
   <script src="js/vendor/jquery.easing.1.3.js"></script>
   <script src="js/main.js"></script>
   <script>
+
+      $(document).ready(
+              function() {
+                  $(".content").niceScroll({
+                      cursorcolor:"#3B5C6D",
+                      cursorborder: "#777",
+                      cursorwidth: "12px",
+                      scrollspeed: "400",
+                      background: "#333",
+                      bouncescroll: "true",
+
+
+
+
+                  });
+              }
+      );
 	var objMenu = new baileysMenuClass(),
 		objPage = new baileysSubpageClass(),
 		objIntro = new baileysIntroClass();
@@ -326,7 +345,11 @@
 		objMenu.init();
 		objPage.init();
         Recaptcha.create("6Lfq8ukSAAAAAGenFYuHJCo_N_nhAPbE7eFOUImo","captchadiv",{theme: "blackglass"});
+
+
 	});
+
+
   </script>
 
 </body>

@@ -2,7 +2,6 @@
 body {
     width: 100%;
     height: 100%;
-    overflow: scroll;
     border: 0;
     padding: 0;
 }
@@ -14,18 +13,21 @@ body {
 	margin-top:0;
 }
 .contact-us section.blurb {
-	width: 33.333%;
+	width: 288px;
 	float: left;
+    margin: 0 0 0 -34px;
 }
 .contact-us section.form-container {
 	float: left;
-	width: 66.666%;
+
 }
 .contact-us #contact-us_form fieldset.data-box {
 	float: left;
+    margin: 0 50px 0 -55px;
 }
 .contact-us #contact-us_form fieldset.submission-box {
 	float: left;
+    margin: 0 0 0 -20px;
 }
 .contact-us .content {
 	/*overflow-y: auto;*/
@@ -45,6 +47,8 @@ body {
 
 
 .contact-us .content {
+    width: 980px;
+
 
 }
 .contact-us .social {
@@ -70,7 +74,7 @@ body {
 .contact-us #contact-us_form button, input, select, textarea, select, option {
 	vertical-align: middle;
 }
-.contact-us input[type="text"],input[type="tel"],input[type="date"],textarea,select {
+.contact-us input[type="text"],input[type="tel"],input[type="date"],select {
 	max-width: 50%;
 	min-width: 13em;
 	border: 1px inset #666;
@@ -83,6 +87,20 @@ body {
 	line-height: 2;
 	padding: 0 .5em;
 	margin-right: .25em;
+}
+
+.contact-us textarea {
+    max-width: 50%;
+    min-width: 13em;
+    border: 1px inset #666;
+    background: #1f1f1f;
+    color: #e0e0e0;
+    resize: none;
+    border-radius: .5em;
+    background-clip: border-box;
+    line-height: 2;
+    padding: 0 .5em;
+    margin-right: .25em;
 }
 .contact-us input[type=submit] {
 	background: #3b5c6d;
@@ -135,5 +153,19 @@ div.captcha {
 	color:#fff;
 	text-transform:uppercase;
 }
+.contact-us #contact-us_form div#contact_form-product_UPC-callout {
+    margin: 0 0 0 96px;
 
+}
+.contact-us #contact-us_form div#contact_form-product_UPC-callout img {
+    margin: 10px;
+    float: left;
+
+}
+.contact-us #contact-us_form div#contact_form-product_UPC-callout p {
+    margin: 0 0 0 0;
+    width: 300px;
+    color: white;
+
+}
 /**********/

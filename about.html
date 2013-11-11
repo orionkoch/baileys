@@ -13,6 +13,22 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/about.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <style>
+  .scroll-rail {
+	  background-color:#231f20;
+	  width:15px;
+	  height:30px;
+	  position:absolute;
+	  border-radius:7px;
+  }
+  .scroll-handle {
+	  background-color:#44464d;
+	  width:15px;
+	  border-radius:7px;
+	  height:20px;
+	  position:absolute;
+  }
+  </style>
 </head>
 
 <body class="about">
@@ -30,6 +46,7 @@
       </h1>
     
       <div class="content">
+        <div class="scroll-content">
         <img class="content-img-right fadeIn" src="img/img_bottles.png" alt="" data-fadein-order="2" />
         <div class="constrain">
           <div class="fadeIn" data-fadein-order="1">
@@ -46,9 +63,35 @@
                 <a href="http://www.pinterest.com/baileyscreamers/" target="_blank" class="pintrest external-link"></a>
                 <a href="http://instagram.com/baileyscreamers" target="_blank" class="instagram external-link"></a>
             </p>
+            <h2>LOREM IPSUM DOLOR SIT AMET?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque 
+               ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <p class="social clearfix">
+                <a href="https://www.facebook.com/BAILEYSCreamers" target="_blank" class="facebook external-link"></a>
+                <a href="https://twitter.com/share?via=BAILEYScreamers" target="_blank" class="twitter external-link"></a>
+                <a href="http://www.pinterest.com/baileyscreamers/" target="_blank" class="pintrest external-link"></a>
+                <a href="http://instagram.com/baileyscreamers" target="_blank" class="instagram external-link"></a>
+            </p>
+            <h2>LOREM IPSUM DOLOR SIT AMET?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque 
+               ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <p class="social clearfix">
+                <a href="https://www.facebook.com/BAILEYSCreamers" target="_blank" class="facebook external-link"></a>
+                <a href="https://twitter.com/share?via=BAILEYScreamers" target="_blank" class="twitter external-link"></a>
+                <a href="http://www.pinterest.com/baileyscreamers/" target="_blank" class="pintrest external-link"></a>
+                <a href="http://instagram.com/baileyscreamers" target="_blank" class="instagram external-link"></a>
+            </p>
           </div>
         </div>
-           
+        </div>
       </div>
       <!-- end .content -->
     </div>
@@ -126,8 +169,8 @@
           <ul class="secondary clearfix">
             <li><a href="about.html">About</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
-            <li><a href="terms-of-use.html">Terms of Use</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html" class="modal">Terms of Use</a></li>
+            <li><a href="privacy-policy.html" class="modal">Privacy Policy</a></li>
           </ul>
           
           <a class="canada_link" href="#">Canadian Products</a>
@@ -162,6 +205,7 @@
   <script src="js/vendor/jquery-1.10.1.min.js"></script>
   <script src="js/vendor/jquery.touchSwipe.min.js"></script>
   <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/jquery.slimscroll2.js"></script>
   <script src="js/main.js"></script>
   <script>
 	var objMenu = new baileysMenuClass(),
@@ -173,6 +217,29 @@
 		objIntro.init();
 		objMenu.init();
 		objPage.init();
+		/*
+		$('.scroll-content').slimScroll({
+			color: '#44464d',
+			railColor: '#231f20',
+			railOpacity: 1,
+			railHeight: '70%',
+			size: '10px',
+			height: 'auto',
+			railVisible: true,
+			alwaysVisible: true
+		});*/
+		
+		$('.scroll-content').slimscroll({
+			color: '#44464d',
+			railColor: '#231f20',
+			railOpacity: 1,
+			railHeight: '40%',
+			size: '10px',
+			height: 'auto',
+			railVisible: true,
+			alwaysVisible: true,
+			scrollBarHolder: '.container'
+		});
 	});
   </script> 
 </body>
