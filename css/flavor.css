@@ -201,11 +201,11 @@ body, html{
 	margin-top:30px;
 	padding:0 10px;
 }
-
+ 
 
 .flavor-bar {
 	position:absolute;
-	bottom:-96px;
+	bottom:-108px;
 	left:50%;
 	margin:0;
 	padding:0;
@@ -220,7 +220,7 @@ body, html{
 	height:162px;
 	float:left;
 	margin-left:3px;
-	margin-top:50px;
+	margin-top:14px;
 	transition: margin-top 0.3s ease-in-out;
 	-webkit-transition: margin-top 0.3s ease-in-out;
 }
@@ -229,6 +229,7 @@ body, html{
 }
 .flavor-bar .flavor:hover {
 	margin-top:0px;
+	cursor: pointer;
 }
 .flavor.active {
 	margin-top:10px;
