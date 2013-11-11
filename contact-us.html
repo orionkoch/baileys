@@ -182,7 +182,36 @@
 
                   </fieldset>
           </div> <!-- end 2 section-->
-          <div class="section3">afaef</div>
+          <div class="section3">
+              <fieldset class="submission-box">
+                  <div>
+                      <h3>How Should We Contact You?</h3>
+                      <label class="radio"><input type="radio" name="contact_form-return_method" value="E-Mail" id="contact_form-return_email"> By Email</label>
+                      <label class="radio"><input type="radio" name="contact_form-return_method" value="Phone" id="contact_form-return_phone"> By Phone</label>
+                  </div>
+                  <br /> <div id="captchadiv"></div>
+                  <script type="text/javascript">
+                      src="http://www.google.com/recaptcha/api/challenge?k=your_public_key">
+                  </script>
+                  <noscript>
+                      <iframe src="http://www.google.com/recaptcha/api/noscript?k=your_public_key"
+                              frameborder="0"></iframe><br>
+                      <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+                      </textarea>
+                      <input type="hidden" name="recaptcha_response_field"
+                             value="manual_challenge">
+                  </noscript>
+
+                  <br />
+                  <input class="large" type="submit" value="Submit" /></div>
+          <p id="success"></p>
+          <ul id="failure"></ul>
+          </fieldset>
+          <div class="clearfix"></div>
+          </form>
+          </section>
+
+          </div> <!-- end 3 setion -->
 
        </div> <!-- end content -->
         </div>
