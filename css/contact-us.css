@@ -13,9 +13,9 @@ body {
 	margin-top:0;
 }
 .contact-us section.blurb {
-	/*width: 288px;*/
-	/*float: left;*/
-    /*margin: 0 0 0 -34px;*/
+	width: 288px;
+	float: left;
+    margin: 0 0 0 -34px;
 }
 .contact-us section.form-container {
 	float: left;
@@ -29,7 +29,9 @@ body {
 	float: left;
     margin: 0 0 0 -20px;
 }
-
+.contact-us .content {
+	/*overflow-y: auto;*/
+}
 .contact-us .col-r  {
 	padding: .25em 0 0 0;
 }
@@ -45,8 +47,7 @@ body {
 
 
 .contact-us .content {
-    margin: 0;
-    width: 100%;
+    width: 980px;
 
 
 }
@@ -169,21 +170,21 @@ div.captcha {
 }
 
 .section1 {
-    width: 325px;
+    width: 33%;
     position: relative;
     float: left;
 
 }
 .section2 {
-    width: 325px;
+    width: 33%;
     position: relative;
-    float: right;
+    float: left;
 
 }
 .section3 {
-    width: 325px;
+    width: 33%;
     position: relative;
-    float: right;
+    float: left;
 
 }
 /**********/
