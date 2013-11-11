@@ -40,7 +40,8 @@
       </header>
         <!--ss-->
     
-      <div class="content" itemscope itemtype="http://schema.org/Recipe">
+      <div class="content">
+        <div class="scroll-content">
         <aside class="left-col fadeIn">
                 <img src="img/img_hero_white_choc_rasp_swirl.png" alt="White Chocolate Raspberry Swirl" />
                 <p class="recipe-caption">White Chocolate Raspberry Sandwich Cookies with Raspberry-Marshmallow Filling. Created by RecipeGirl&reg;.</p>
@@ -84,9 +85,10 @@
               <p class="view-other-recipes fadeIn">
                 <a href="recipes.html">View Other Recipes &#9658;</a>
               </p>
-
+        </div>
+        <!-- end .scroll-content -->
       </div>
-            <!-- end .content -->
+      <!-- end .content -->
 
     </div>
         <!-- end .container -->
@@ -207,6 +209,7 @@
   <script src="js/vendor/jquery-1.10.1.min.js"></script>
   <script src="js/vendor/jquery.touchSwipe.min.js"></script>
   <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/jquery.slimscroll2.js"></script>
   <script src="js/main.js"></script>
   <script src="js/recipe.js"></script>
   <script>
@@ -222,6 +225,21 @@
 		objPage.init();
 		objRecipe.init();
 		
+		$('.scroll-content').slimscroll({
+			color: '#44464d',
+			distance: '3px',
+			railColor: '#231f20',
+			railOpacity: 1,
+			railHeight: '60%',
+			barWidth: '9px',
+			size: '15px',
+			height: 'auto',
+			railVisible: true,
+			alwaysVisible: true,
+			scrollBarHolder: '.container',
+			width:910
+		});
+
 	});
   </script>
 

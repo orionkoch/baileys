@@ -1,7 +1,10 @@
 .about .content {
-	width: 880px;
-	margin-left: -440px;
+	width: 910px;
+	margin-left: -455px;
 	x-overflow-y:auto;
+}
+.about .scroll-content {
+	padding-right:15px;
 }
 .about .corner-br {
 	display:none;

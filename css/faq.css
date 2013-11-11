@@ -1,7 +1,7 @@
 .faq .content {
-	overflow-y:auto;
-	width:880px;
-	margin-left: -440px;
+	x-overflow-y:auto;
+	width: 910px;
+	margin-left: -455px;
 }
 .faq .col {
 	float:left;

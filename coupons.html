@@ -30,6 +30,7 @@
       </h1>
     
       <div class="content">
+      <div class="scroll-content">
         <img class="content-img-right fadeIn" src="img/img_coupons_hero.png" alt="" data-fadein-order="2" />
           <div class="constrain fadeIn" data-fadein-order="1">
             <h1>More than Coupons</h1>
@@ -55,6 +56,8 @@
             </form>
           </div>
            
+      </div>
+      <!-- end .scroll-content -->
       </div>
       <!-- end .content -->
     </div>
@@ -168,6 +171,7 @@
   <script src="js/vendor/jquery-1.10.1.min.js"></script>
   <script src="js/vendor/jquery.touchSwipe.min.js"></script>
   <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/jquery.slimscroll2.js"></script>
   <script src="js/main.js"></script>
   <script>
 	var objMenu = new baileysMenuClass(),
@@ -179,6 +183,21 @@
 		objIntro.init();
 		objMenu.init();
 		objPage.init();
+		
+		$('.scroll-content').slimscroll({
+			color: '#44464d',
+			distance: '3px',
+			railColor: '#231f20',
+			railOpacity: 1,
+			railHeight: '60%',
+			barWidth: '9px',
+			size: '15px',
+			height: 'auto',
+			railVisible: true,
+			alwaysVisible: true,
+			scrollBarHolder: '.container',
+			width:910
+		});
 	});
   </script> 
 </body>

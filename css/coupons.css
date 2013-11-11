@@ -1,7 +1,7 @@
-.content {
-	width:880px;
-	margin-left: -440px;
-	overflow-y:auto;
+.coupons .content {
+	width: 910px;
+	margin-left: -455px;
+	x-overflow-y:auto;
 }
 .coupons .constrain {
 	width:500px;

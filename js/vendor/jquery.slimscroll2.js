@@ -63,6 +63,9 @@
         // defautlt CSS class of the slimscroll bar
         barClass : 'slimScrollBar',
 
+        // defautlt width slimscroll bar
+        barWidth : '10px',
+
         // defautlt CSS class of the slimscroll wrapper
         wrapperClass : 'slimScrollDiv',
 
@@ -79,7 +82,11 @@
         borderRadius: '7px',
 
         // sets border radius of the rail
-        railBorderRadius : '7px'
+        railBorderRadius : '7px',
+
+        // Padd the bottom a bit, adds to the height
+		padHeight : 0
+		
       };
 
       var o = $.extend(defaults, options);
@@ -162,7 +169,7 @@
         // update style for the div
         me.css({
           overflow: 'hidden',
-          width: o.width,
+          width: (o.width-30),
           height: o.height
         });
 
@@ -186,7 +193,7 @@
           .addClass(o.barClass)
           .css({
             background: o.color,
-            width: o.size,
+            width: o.barWidth,
             position: 'absolute',
             top: 0,
             opacity: o.opacity,
@@ -200,7 +207,7 @@
 
         // set position
         var posCss = (o.position == 'right') ? { right: o.distance } : { left: o.distance };
-        rail.css(posCss);
+        rail.css({ right: '0px' });
         bar.css(posCss);
 
         // wrap it
@@ -220,7 +227,9 @@
 
             $doc.bind("mousemove.slimscroll", function(e){
               currTop = t + e.pageY - pageY;
-              bar.css('top', currTop);
+			  lowerBound = rail.height() - bar.height();
+              if(currTop < lowerBound)
+			    bar.css('top', currTop);
               scrollContent(0, bar.position().top, false);// scroll content
             });
 
@@ -334,6 +343,10 @@
           releaseScroll = false;
           var delta = y;
           var maxTop = me.outerHeight() - bar.outerHeight();
+		  
+		  if(o.railHeight)
+		  	maxTop = rail.outerHeight() - bar.outerHeight();
+
 
           if (isWheel)
           {
@@ -354,7 +367,7 @@
           }
 
           // calculate actual scroll amount
-          percentScroll = parseInt(bar.css('top')) / ((me.outerHeight()*.4) - bar.outerHeight());
+          percentScroll = parseInt(bar.css('top')) / ((me.outerHeight()*.6) - bar.outerHeight());
           delta = percentScroll * (me[0].scrollHeight - me.outerHeight());
 
           if (isJump)
@@ -395,13 +408,24 @@
         function getBarHeight()
         {
           // calculate scrollbar height and make sure it is not too small
-          //barHeight = Math.max((me.outerHeight() / me[0].scrollHeight) * me.outerHeight(), minBarHeight);
-          barHeight = Math.max((.4 / me[0].scrollHeight) * .4, minBarHeight);
-		  bar.css({ height: barHeight + 'px' });
+          barHeight = Math.max((me.outerHeight() / me[0].scrollHeight) * me.outerHeight(), minBarHeight);
+          //barHeight = Math.max((.4 / me[0].scrollHeight) * .4, minBarHeight);
+		  bar.css({ height: (0.6*barHeight) + 'px' });
+		  console.log(barHeight, me.outerHeight());
 
           // hide scrollbar if content is not long enough
-          var display = barHeight == me.outerHeight() ? 'none' : 'block';
-          bar.css({ display: display });
+          //var display = barHeight == me.outerHeight() ? 'none' : 'block';
+          //bar.css({ display: display });
+		  if(barHeight == me.outerHeight())
+		  {
+	          bar.css({ display: 'none' });
+			  rail.css({ display: 'none' });
+		  }
+		  else 
+		  {
+	          bar.css({ display: 'block' });
+			  rail.css({ display: 'block' });
+		  }
         }
 
         function showBar()

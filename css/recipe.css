@@ -4,7 +4,10 @@
     top: 10px;
 }
 /**/
-
+.recipe .content {
+	width: 910px;
+	margin-left: -455px;
+}
 .content {
     /*color: #dac7a2;*/
     /*font-size: 13px;*/
