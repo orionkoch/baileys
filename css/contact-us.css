@@ -6,6 +6,15 @@ body {
     padding: 0;
 }
 
+
+.contact-us .container {
+    background-color: #282828;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    /*height: 100%;*/
+    z-index: 2;
+}
 .contact-us h2 {
 	margin-bottom:0;
 }
@@ -185,7 +194,7 @@ div#captchadiv {
 
 }
 .contact-us #contact-us_form div#contact_form-product_UPC-callout p {
-    margin: 0 0 0 0;
+    margin: 0 0 10px 0;
     width: 167px;
     color: white;
     text-align: left;
