@@ -110,7 +110,11 @@ body {
 	margin-right: .25em;
 }
 
-
+.contact-us input[type="text"]:hover,input[type="tel"]:hover,input[type="date"]:hover,input[type="textarea"]:hover {
+    border:1px solid #2ea8ef;
+}
+ outline: none !important;
+}
 .contact-us textarea {
     max-width: 50%;
     min-width: 13em;

@@ -83,3 +83,39 @@
 	color:#fff;
 	text-transform:uppercase;
 }
+
+/********** Social Popup **************/
+#socialPopup {
+    background: url("../img/fb_social_pop_up.png") 0 0 no-repeat;
+    width: 499px;
+    height: 194px;
+    position: absolute;
+    bottom: -197px;
+    left: 130px;
+    z-index: 2;
+}
+
+#socialPopup h1 {
+    color: #e4f7ff;
+    text-transform: uppercase;
+    font-size: 27px;
+    padding: 0 0 0 35px;
+    text-align: center;
+
+}
+
+#socialPopup p {
+    color: #e6e6e6;
+    font-size: 22px;
+    /*width: 380px;*/
+    line-height: 24px;
+    margin: 0 0 0 77px;
+
+}
+
+#socialPopup p span{
+    color: #9fd6ee;
+    font-size: 22px;
+    text-transform: uppercase;
+
+}

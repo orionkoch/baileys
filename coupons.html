@@ -57,8 +57,14 @@
           </div>
            
       </div>
+
+
       <!-- end .scroll-content -->
       </div>
+        <div id="socialPopup">
+            <h1>Kristin de Garavilla</h1>
+            <p><span>#BAILEYSCREAMERS</span> seasonal flavors are here. I  need my pumpkin spice! So good!</p>
+        </div>
       <!-- end .content -->
     </div>
     <!-- end .container -->
@@ -198,7 +204,30 @@
 			scrollBarHolder: '.container',
 			width:910
 		});
-	});
+
+
+
+
+    });
+
+    $(window).bind('load', function() {
+        $('#socialPopup').delay(2000).animate({
+            bottom: "+=200"
+        }, 3000, function() {
+//            $('#socialPopup').delay(3000).animate({
+//                bottom: '-=200'
+//            }, 1000);
+
+            })
+        });
+
+
   </script> 
 </body>
 </html>
+
+setTimeOut(function() {
+
+// your function goes here
+
+},1000); // change your delay time here.
