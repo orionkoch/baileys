@@ -521,7 +521,7 @@ function baileysSliderClass()
 		var currentSlideLeft = browserWidth,
 			newSlideLeft = 0;
 		
-		if (direction == 'right') 
+		if (direction == 'left') 
 		{
 			newSlide = currentSlide > 0 ? (currentSlide - 1) : slideCount;
 			currentSlideLeft = (-1 * browserWidth);
@@ -574,6 +574,7 @@ function baileysSliderClass()
 	//this._setSlide = function(index)
 	function _setSlide(index)
 	{
+		
 		var hideLeft;
 		
 		index = ((index < 0) ? 0 : ((index > slideCount) ? slideCount : index));
@@ -682,6 +683,7 @@ function baileysPromoAnimationsClass()
 			setTimeout(play, 1000);
 	}
 	
+	/*
 	this.animatePromo2 = function() 
 	{
 		var $promo2h1      = $('.promo2-h1'),
@@ -722,6 +724,7 @@ function baileysPromoAnimationsClass()
 		if(!promo2Played)
 			setTimeout(play, 1000);
 	}
+	*/
 
 }
 
@@ -857,6 +860,7 @@ function baileysIntroClass()
 	/**
 
 	 * Starts the animations for a first-time visitor to the home page.
+	 
 	 */
 	function _startHomepageIntro()
 	{

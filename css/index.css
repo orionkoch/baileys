@@ -72,6 +72,12 @@
     display: none;
     z-index:-1;
 }
+
+/*
+
+	---- removed slide 11/11/13
+
+
 .promo2 {
     background:#110d0d url(../img/bg_promo_2.jpg) no-repeat;
     background-position: center bottom;
@@ -170,6 +176,24 @@
     margin:-80px 0 0 0;
 }
 
+*/
+
+
+.slide-fpo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -25%;
+	width: 50%;
+	height: 80px;
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+}
+
+
+
 @media only screen and (max-height: 689px)
 {
     .promo1-bottles {
@@ -178,9 +202,7 @@
 }
 @media only screen and (max-width: 1100px)
 {
-    .promo2-bottle img {
-        height:50%;
-    }
+    
 }
 .img-responsive {
     display: block;
