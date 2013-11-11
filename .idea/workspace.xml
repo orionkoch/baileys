@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea167917-b36c-4428-b921-2cdfec78a5c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-us.html" afterPath="$PROJECT_DIR$/contact-us.html" />
-    </list>
+    <list default="true" id="ea167917-b36c-4428-b921-2cdfec78a5c6" name="Default" comment="" />
     <ignored path="baileys.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,47 +22,7 @@
     <favorites_list name="baileys" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="contact-us.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/contact-us.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="15" selection-start="96" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="2175">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact-us.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/contact-us.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="186" column="42" selection-start="10537" selection-end="10537" vertical-scroll-proportion="0.2264151" vertical-offset="2610" max-vertical-offset="5085">
-              <folding>
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#7;n#div#0;n#fieldset#0;n#form#0;n#section#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#8;n#div#0;n#fieldset#0;n#form#0;n#section#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact-us.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PhpstormProjects/Baileys/contact-us.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="33" selection-start="950" selection-end="1048" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="5055">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recipe.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/recipe.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="101" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="3120">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -370,7 +328,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="104" y="22" width="1816" height="967" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -378,7 +336,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22624435" sideWeight="0.67060214" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22624435" sideWeight="0.67060214" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -491,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/contact-us.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="15" selection-start="96" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="2175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/PhpstormProjects/Baileys/contact-us.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="33" selection-start="950" selection-end="1048" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="5055">
@@ -505,9 +456,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/contact-us.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="15" selection-start="96" selection-end="112" vertical-scroll-proportion="0.07326008" vertical-offset="30" max-vertical-offset="2175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contact-us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="42" selection-start="10537" selection-end="10537" vertical-scroll-proportion="0.2264151" vertical-offset="2610" max-vertical-offset="5085">
+        <state line="186" column="42" selection-start="10537" selection-end="10537" vertical-scroll-proportion="-1.8904282" vertical-offset="4291" max-vertical-offset="5085">
           <folding>
             <element signature="n#style#0;n#span#0;n#label#0;n#div#7;n#div#0;n#fieldset#0;n#form#0;n#section#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#8;n#div#0;n#fieldset#0;n#form#0;n#section#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
