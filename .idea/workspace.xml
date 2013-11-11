@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ea167917-b36c-4428-b921-2cdfec78a5c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/recipe.css" afterPath="$PROJECT_DIR$/css/recipe.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recipe.html" afterPath="$PROJECT_DIR$/recipe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="baileys.iws" />
@@ -35,19 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipe.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="recipe.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recipe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1528" selection-end="1528" vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="3525">
+            <state line="184" column="14" selection-start="9245" selection-end="9245" vertical-scroll-proportion="0.24433249" vertical-offset="2566" max-vertical-offset="3525">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipe.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="recipe.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/recipe.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="121" selection-end="121" vertical-scroll-proportion="0.14669926" vertical-offset="0" max-vertical-offset="3360">
+            <state line="5" column="4" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="3360">
               <folding />
             </state>
           </provider>
@@ -59,6 +61,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Push.Settings">
+    <option name="myUpdateMethod" value="REBASE" />
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
@@ -86,8 +91,8 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/contact-us.html" />
         <option value="$PROJECT_DIR$/css/contact-us.css" />
-        <option value="$PROJECT_DIR$/recipe.html" />
         <option value="$PROJECT_DIR$/css/recipe.css" />
+        <option value="$PROJECT_DIR$/recipe.html" />
       </list>
     </option>
   </component>
@@ -477,12 +482,16 @@
       <created>1384197387415</created>
       <updated>1384197387416</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Made Gabes changes to recipe.html">
+      <created>1384197978655</created>
+      <updated>1384197978655</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="104" y="22" width="1816" height="967" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -496,7 +505,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821724" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23190045" sideWeight="0.67060214" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23190045" sideWeight="0.67060214" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -626,16 +635,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recipe.html">
+    <entry file="file://$PROJECT_DIR$/css/recipe.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1528" selection-end="1528" vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="3525">
+        <state line="5" column="4" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="3360">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/recipe.css">
+    <entry file="file://$PROJECT_DIR$/recipe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="121" selection-end="121" vertical-scroll-proportion="0.14669926" vertical-offset="0" max-vertical-offset="3360">
+        <state line="184" column="14" selection-start="9245" selection-end="9245" vertical-scroll-proportion="0.24433249" vertical-offset="2566" max-vertical-offset="3525">
           <folding />
         </state>
       </provider>
