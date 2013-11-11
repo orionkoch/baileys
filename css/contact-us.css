@@ -7,14 +7,6 @@ body {
 }
 
 
-.contact-us .container {
-    background-color: #282828;
-    position: relative;
-    overflow: hidden;
-    width: 90%;
-    /*height: 100%;*/
-    z-index: 2;
-}
 .contact-us h2 {
 	margin-bottom:0;
 }
