@@ -58,22 +58,7 @@
 	padding-right:22px;
 }
 
-/****.recipe .tab span {*/
-    /*position: relative;*/
-    /*top: -60px;*/
-    /*left: 129px;*/
 
-/*}*/
-/*.recipe .tabs span a {*/
-    /*text-transform: uppercase;*/
-    /*font-size: 12px;*/
-    /*color: #a3cffe;*/
-/*}*/
-/*.recipe .tabs span hover {*/
-    /*text-transform: uppercase;*/
-    /*font-size: 12px;*/
-    /*color: #a3cffe;*/
-/*}*/
 .recipe .tabs {
 	position:absolute;
 	top:-70px;
@@ -142,7 +127,7 @@
 
 }
 .tab-content {
-    padding: 0 29px 64px 0;
+    padding: 0 29px 12px 0;
     border: 2px solid #736d66;
     border-radius: 0px 20px 20px 20px;
     display: none;
