@@ -485,7 +485,8 @@ function baileysSliderClass()
 		$navLinks.click(function() 
 		{
 			newSlide = $(this).parent('li').index();
-			slide('right');
+			slide(newSlide);
+			//slide('right');
 		});
 		
 		$container.swipe( 
@@ -518,19 +519,31 @@ function baileysSliderClass()
 	 */
 	function slide(direction) 
 	{
+		
+		console.log("top in slide = " + direction + " newSlide = " + newSlide);
+		
 		var currentSlideLeft = browserWidth,
 			newSlideLeft = 0;
 		
-		if (direction == 'right') 
+		if (direction == 'left')
 		{
+		
 			newSlide = currentSlide > 0 ? (currentSlide - 1) : slideCount;
 			currentSlideLeft = (-1 * browserWidth);
 			newSlideLeft = (browserWidth);
-		}
-		else 
-		{
+			
+		}else if (direction == 'right'){
+		
 			newSlide = (currentSlide < slideCount) ? (currentSlide + 1) : 0;
 			newSlideLeft = (-1 * browserWidth);
+		
+		}else{
+			
+			console.log("else slide = "+ direction);
+			
+			newSlide = direction;	
+			newSlideLeft = (-1 * browserWidth);	
+			
 		}
 
 		$slides.eq(currentSlide)
@@ -551,6 +564,8 @@ function baileysSliderClass()
 		_playSlideAnimation(newSlide);
 		
 	}
+	
+	
 
 	/**
 	 * Play whatever animations are needed when a new slide is displayed
@@ -574,6 +589,7 @@ function baileysSliderClass()
 	//this._setSlide = function(index)
 	function _setSlide(index)
 	{
+		
 		var hideLeft;
 		
 		index = ((index < 0) ? 0 : ((index > slideCount) ? slideCount : index));
@@ -682,6 +698,7 @@ function baileysPromoAnimationsClass()
 			setTimeout(play, 1000);
 	}
 	
+	/*
 	this.animatePromo2 = function() 
 	{
 		var $promo2h1      = $('.promo2-h1'),
@@ -722,6 +739,7 @@ function baileysPromoAnimationsClass()
 		if(!promo2Played)
 			setTimeout(play, 1000);
 	}
+	*/
 
 }
 
@@ -857,6 +875,7 @@ function baileysIntroClass()
 	/**
 
 	 * Starts the animations for a first-time visitor to the home page.
+	 
 	 */
 	function _startHomepageIntro()
 	{
