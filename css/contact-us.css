@@ -29,9 +29,7 @@ body {
 	float: left;
     margin: 0 0 0 -20px;
 }
-.contact-us .content {
-	/*overflow-y: auto;*/
-}
+
 .contact-us .col-r  {
 	padding: .25em 0 0 0;
 }
@@ -48,6 +46,7 @@ body {
 
 .contact-us .content {
     width: 980px;
+    padding: 0 30px 0 0;
 
 
 }
