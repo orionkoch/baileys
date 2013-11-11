@@ -168,4 +168,23 @@ div.captcha {
     color: white;
 
 }
+
+.section1 {
+    width: 33%;
+    position: relative;
+    float: left;
+
+}
+.section2 {
+    width: 33%;
+    position: relative;
+    float: left;
+
+}
+.section3 {
+    width: 33%;
+    position: relative;
+    float: left;
+
+}
 /**********/
