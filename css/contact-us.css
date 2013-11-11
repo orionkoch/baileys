@@ -115,9 +115,15 @@ body {
 	margin: 0;
 	color: #fff;
 	padding:0px 20px;
-	line-height:2em;
+	line-height:19px;
+    opacity: .8;
 
 }
+
+.contact-us input[type="submit"]:hover{
+    opacity: 1;
+}
+
 .contact-us input[type=submit].large {
 	width:200px;
 	line-height:52px;
