@@ -167,23 +167,13 @@ div.captcha {
     color: white;
 
 }
-
-.section1 {
-    width: 33%;
-    position: relative;
-    float: left;
-
+.recaptchatable #recaptcha_response_field {
+    width: 100px!important;
+    position: relative!important;
+    bottom: 7px!important;
+    padding: 0!important;
+    margin: 15px 0 0 0!important;
+    font-size: 10pt;
 }
-.section2 {
-    width: 33%;
-    position: relative;
-    float: left;
-
-}
-.section3 {
-    width: 33%;
-    position: relative;
-    float: left;
-
 }
 /**********/
