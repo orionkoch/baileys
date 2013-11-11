@@ -1,7 +1,10 @@
 .about .content {
 	width: 880px;
 	margin-left: -440px;
-	overflow-y:auto;
+	x-overflow-y:auto;
+}
+.about .corner-br {
+	display:none;
 }
 .about .constrain {
 	width:500px;

@@ -228,6 +228,7 @@ body {
 	bottom:0;
 	width:980px;
 	margin:0 0 0 -490px;
+	overflow:hidden;
 }
 /*
 .content {
