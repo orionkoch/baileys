@@ -57,8 +57,14 @@
           </div>
            
       </div>
+
+
       <!-- end .scroll-content -->
       </div>
+        <div id="socialPopup">
+            <h1>Kristin de Garavilla</h1>
+            <p><span>#BAILEYSCREAMERS</span> seasonal flavors are here. I  need my pumpkin spice! So good!</p>
+        </div>
       <!-- end .content -->
     </div>
     <!-- end .container -->
@@ -91,10 +97,13 @@
                   <li><a href="flavor.html">Creme Brulee</a></li>
                   <li><a href="flavor.html">Toffee Almond Creme</a></li>
                   <li><a href="flavor.html">Latte Macchiato</a></li>
-                  <li><a href="flavor.html">Triple Sweet Creme</a></li>
+                  <li><a href="flavor.html">Triple Sweet Cream</a></li>
                   <li><a href="flavor.html">Brown Butter Pecan</a></li>
-                  <li><a href="flavor.html">Baileys Mudslide</a></li>
+                  <li><a href="flavor.html">Baileys&reg; Mudslide</a></li>
                   <li><a href="flavor.html">Vanilla Brown Sugar</a></li>
+                   <li><a href="flavor.html">Fat Gree Frenck Vanilla</a></li>
+                   <li><a href="flavor.html">Fat Free Original Irish Cream</a></li>
+                   <li><a href="flavor.html">White Chocolate Raspberry Swirl</a></li>
                 </ul>
               </li>
                 <li><span class="flavor_labels">Example Category</span>
@@ -139,7 +148,7 @@
             <li><a href="privacy-policy.html" class="modal">Privacy Policy</a></li>
           </ul>
           
-          <a class="canada_link" href="#">Canadian Products</a>
+          <a class="canada_link" href="http://baileyscreamers.com/flavors/canadian/" target="_blank">Canadian Products</a>
           
         </nav>
     
@@ -166,7 +175,7 @@
     </div>
 
   </div>
-  <!-- end .border -->
+  <!-- end ..border -->
 
   <script src="js/vendor/jquery-1.10.1.min.js"></script>
   <script src="js/vendor/jquery.touchSwipe.min.js"></script>
@@ -198,7 +207,25 @@
 			scrollBarHolder: '.container',
 			width:910
 		});
-	});
+
+
+
+
+    });
+//// Social Popup Function
+
+    $(window).bind('load', function() {
+        $('#socialPopup').delay(2000).animate({
+            bottom: "+=200"
+        }, 1000,"easeInOutBounce", function() {
+//            $('#socialPopup').delay(3000).animate({
+//                bottom: '-=200'
+//            }, 1000);
+
+            })
+        });
+
+
   </script> 
 </body>
 </html>

@@ -1,3 +1,7 @@
+
+body {
+    z-index: 0;
+}
 .coupons .content {
 	width: 910px;
 	margin-left: -455px;
@@ -82,4 +86,39 @@
 .coupons #email-signup label {
 	color:#fff;
 	text-transform:uppercase;
+}
+
+/********** Social Popup ***************/
+#socialPopup {
+    background: url("../img/footer_fb_pop_up.png") 0 0 no-repeat;
+    width: 259px;
+    height: 101px;
+    position: absolute;
+    bottom: -197px;
+    left: 130px;
+    z-index: 2;
+}
+
+#socialPopup h1 {
+    color: #e4f7ff;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0 0 0 35px;
+    text-align: center;
+
+}
+
+#socialPopup p {
+    color: #e6e6e6;
+    font-size: 9px;
+    width: 181px;
+    line-height: 16px;
+    margin: 0 0 0 56px
+}
+
+#socialPopup p span{
+    color: #9fd6ee;
+    font-size: 11px;
+    text-transform: uppercase;
+
 }
