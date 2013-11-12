@@ -2,11 +2,17 @@ body, html{
 	min-width: 980px;
 	min-height: 400px;
 }
+
+.oz{
+	font-size: 9px;
+}
+
 .flavor-page .corner-bl {
 	display:none;
 }
 .flavor-page .heading {
 	background:url(../img/bg_product_heading.png) no-repeat left bottom;
+	background-position-x: 0;
 	color:#f8f8f8;
 	font-size:29px;
 	height:auto;
@@ -21,8 +27,8 @@ body, html{
 .flavor-page .heading span {
 	color:#b18f64;
 	display:block;
-	font-size:10px;
-	line-height:1em;
+	font-size:12px;
+	line-height:1.2em;
 }
 .product-photo {
 	position: absolute;
@@ -36,7 +42,7 @@ body, html{
 }
 .product-desc {
 	position: absolute;
-	top: 113px;
+	top: 12%;
 	width: 26%;
 	right: 32.5%;
 	color:#fff;
@@ -45,20 +51,9 @@ body, html{
 	min-width: 275px;
 	padding-bottom: 10px;
 	x-background: #243;
-	-webkit-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-    -moz-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-    -ms-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-     -o-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-        transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	
 }
-.product-desc:hover {
-	top: 110px;
-	-webkit-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-   -moz-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-    -ms-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-     -o-transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-        transition: top 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-}
+
 .product-social {
 	width: 20%;
 	position: absolute;
@@ -66,25 +61,8 @@ body, html{
 	right: 8%;
 	z-index: 12;
 	min-width: 240px;
-	x-display: none;
-		-webkit-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-   -moz-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-    -ms-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-     -o-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-        transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
-.product-social:hover {
-	bottom: 103px;
-	cursor: pointer;
-		-webkit-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-   -moz-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-    -ms-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-     -o-transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-        transition: bottom 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-}
-.product-desc .available-sizes {
-	text-transform:uppercase;
-}
+
 
 .border-blue {
 	color:#b1d9fe;
@@ -102,6 +80,7 @@ body, html{
 	float: left;
 	padding-right: 21px;
 }
+
 .border-blue:hover {
 	background-position:left -170px;
 }
@@ -115,10 +94,22 @@ body, html{
 .border-blue.where:hover {
 	background-position:0 -136px;
 }
-.btn-view-recipes {
+
+a.btn-view-recipes {
 	position:absolute;
-	left:50px;
-	bottom:80px;
+	left:12%;
+	bottom:5%;
+	width: 141px;
+	height: 50px;
+	background: url('../img/btn_view_recipes.png') no-repeat;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+
+}
+a.btn-view-recipes:hover{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
 }
 .product-desc .border-blue {
 	float:left;
