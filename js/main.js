@@ -223,29 +223,6 @@ if (!Array.prototype.indexOf)
 
 
 /**
- * Some lean modal functionality.
- * @constructor
- */
-function baileysModalClass()
-{
-	/**
-	 * Binds click and hover events to DOM elements.
-	 */
-	function _bindEvents()
-	{
-	}
-
-	/**
-	 * Initialize.
-	 */
-	this.init = function()
-	{
-	}
-
-}
-
-
-/**
  * The menu that slides in from the right edge of the screen
  * when you hover over the tab that protrudes from the black border.
  * @constructor
@@ -275,7 +252,7 @@ function baileysMenuClass()
 		mmAA       = galW-(mPadd*2), // The mousemove available area
 		mmAAr      = (galW/mmAA),    
 
-		menuClock  ,
+		menuClock,
 		
 		openDistance = 450;
 
