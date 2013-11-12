@@ -216,6 +216,14 @@
         // append to parent div
         me.parent().append(bar);
         me.parent().append(rail);
+		$(window).on('resize', function(e)
+		{
+			//var newHeight = $(window).height() - me.parent().height();
+			var newHeight = $(window).height() - me.parent().offset().top - 43;
+			$('.slimScrollDiv').css('height', newHeight);
+			me.css('height', newHeight);
+			showBar();
+		});
 
         // make it draggable and no longer dependent on the jqueryUI
         if (o.railDraggable){
@@ -404,14 +412,12 @@
             document.attachEvent("onmousewheel", _onWheel)
           }
         }
-
-        function getBarHeight()
+		function getBarHeight()
         {
           // calculate scrollbar height and make sure it is not too small
           barHeight = Math.max((me.outerHeight() / me[0].scrollHeight) * me.outerHeight(), minBarHeight);
           //barHeight = Math.max((.4 / me[0].scrollHeight) * .4, minBarHeight);
 		  bar.css({ height: (0.6*barHeight) + 'px' });
-		  console.log(barHeight, me.outerHeight());
 
           // hide scrollbar if content is not long enough
           //var display = barHeight == me.outerHeight() ? 'none' : 'block';
@@ -479,6 +485,8 @@
         }
 
       });
+        
+
 
       // maintain chainability
       return this;
