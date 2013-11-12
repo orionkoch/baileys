@@ -52,8 +52,9 @@ body {
 
 
 .contact-us .content {
-    width: 980px;
-    padding: 0 30px 10px 0;
+    x-width: 980px;
+    x-padding: 0 30px 10px 0;
+	width: 1010px;
     margin-top: 30px;
 
 

@@ -32,6 +32,7 @@
       </h1>
 
         <div class="content clearfix">
+          <div class="scroll-content">
             <section class="blurb">
                 <header>
                     <h2>What’s on your mind?</h2>
@@ -188,9 +189,7 @@
                             <label class="radio"><input type="radio" name="contact_form-return_method" value="Phone" id="contact_form-return_phone"> By Phone</label>
                         </div>
                         <br /> <div id="captchadiv"></div>
-                        <script type="text/javascript">
-                            src="http://www.google.com/recaptcha/api/challenge?k=your_public_key">
-                        </script>
+                        <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=your_public_key"></script>
                         <noscript>
                             <iframe src="http://www.google.com/recaptcha/api/noscript?k=your_public_key"
                                     frameborder="0"></iframe><br>
@@ -209,6 +208,7 @@
         </form>
         </section>
         <div class="clearfix"></div>
+    </div><!-- end .scroll-content -->
     </div><!-- end .content -->
   </div><!-- end .container -->
   <div class="legal">
@@ -318,28 +318,11 @@
 
   <script src="js/vendor/jquery-1.10.1.min.js"></script>
   <script src="js/map.js"></script>
-  <script src="js/jquery.nicescroll.js"></script>
   <script src="js/vendor/jquery.touchSwipe.min.js"></script>
   <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/jquery.slimscroll2.js"></script>
   <script src="js/main.js"></script>
   <script>
-
-      $(document).ready(
-              function() {
-                  $(".content").niceScroll({
-                      cursorcolor:"#3B5C6D",
-                      cursorborder: "#777",
-                      cursorwidth: "12px",
-                      scrollspeed: "400",
-                      background: "#333",
-                      bouncescroll: "true",
-
-
-
-
-                  });
-              }
-      );
 	var objMenu = new baileysMenuClass(),
 		objPage = new baileysSubpageClass(),
 		objIntro = new baileysIntroClass();
@@ -349,12 +332,22 @@
 		objIntro.init();
 		objMenu.init();
 		objPage.init();
-        Recaptcha.create("6Lfq8ukSAAAAAGenFYuHJCo_N_nhAPbE7eFOUImo","captchadiv",{theme: "blackglass"});
-
-
+		
+		$('.scroll-content').slimscroll({
+			color: '#44464d',
+			distance: '3px',
+			railColor: '#231f20',
+			railOpacity: 1,
+			railHeight: '60%',
+			barWidth: '9px',
+			size: '15px',
+			height: 'auto',
+			railVisible: true,
+			alwaysVisible: true,
+			scrollBarHolder: '.container',
+			width:1010
+		});
 	});
-
-
   </script>
 
 </body>
