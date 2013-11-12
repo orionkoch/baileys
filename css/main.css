@@ -13,6 +13,23 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    x-background: #000;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background: #222 url(../img/bg_footer.jpg);
+	color: #5d5d5d;
+	font-size: 9px;
+	text-align: right;
+}
+
+.footer div{
+	margin: 4px 6px 0 0px;
 }
 
 ::-moz-selection {
@@ -79,9 +96,9 @@ body {
 	top:0;
 	left:0;
 	right:0;
-	bottom:0;
+	bottom:20px;
 	background-color:#110d0d;
-	padding:15px 15px 43px 0;
+	padding:15px 15px 33px 0;
 	border-left:15px solid #110d0d;
 	overflow: hidden;
 	z-index:1;
@@ -138,7 +155,7 @@ body {
 	width:186px;
 	height:186px;
 	background:url(../img/bg_corners.png) right bottom no-repeat;
-	bottom: 42px;
+	bottom: 31px;
 	right: 14px;
 	z-index:3;
 }
@@ -654,7 +671,7 @@ h2.site-search-h2 {
    Bullet nav at the bottom
    -------------------------------------------------------------------------- */
 .counter {
-	margin:18px auto;
+	margin: 15px auto 0 auto;
 	padding:0;
 	z-index:4;
 	display:none;
