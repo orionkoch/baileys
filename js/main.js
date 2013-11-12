@@ -409,7 +409,6 @@ function baileysMenuClass()
 			{
 				if(direction=='right') { 
 					$flavorbar.attr('style','');
-					console.log('right');
 				}
 			});
 		}
@@ -516,9 +515,6 @@ function baileysSliderClass()
 	 */
 	function slide(direction) 
 	{
-		
-		console.log("top in slide = " + direction + " newSlide = " + newSlide);
-		
 		var currentSlideLeft = browserWidth,
 			newSlideLeft = 0;
 		
@@ -535,9 +531,7 @@ function baileysSliderClass()
 			newSlideLeft = (-1 * browserWidth);
 		
 		}else{
-			
-			console.log("else slide = "+ direction);
-			
+						
 			newSlide = direction;	
 			newSlideLeft = (-1 * browserWidth);	
 			
@@ -669,7 +663,6 @@ function baileysPromoAnimationsClass()
 
 		function play()
 		{
-			//console.log('playing promo 1 animations...');
 			$promo1h1.fadeIn(300, function()
 			{
 				$link1.fadeIn(300, function()
@@ -710,7 +703,6 @@ function baileysPromoAnimationsClass()
 		
 		function play()
 		{
-			//console.log('playing promo 2 animations...');
 			$promo2h1.fadeIn(200, function()
 			{
 				$promo2h2.fadeIn(200, function()
