@@ -1,3 +1,8 @@
+.recipes .corner-bl {
+    display: none;
+}
+
+
 .recipes .container {
 	background-color:#392727;
 }
