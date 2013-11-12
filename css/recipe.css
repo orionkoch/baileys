@@ -1,4 +1,6 @@
-
+.recipe .corner-bl {
+    display: none;
+}
 
 .recipe div.header {
     height: 200px;
