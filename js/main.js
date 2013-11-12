@@ -359,26 +359,32 @@ function baileysMenuClass()
 	
 	function openMenu()
 	{
-		$tabs.animate({right: 0}, 300, 'easeInOutCirc');
-		moveContainer('left');
-		$leftRightNav.fadeOut('fast');
-		
-		if(galW < galSW)
-			_startMenuClock();
-
-		menuOpen = true;
+		if(!menuOpen)
+		{
+			$tabs.animate({right: 0}, 300, 'easeInOutCirc');
+			moveContainer('left');
+			$leftRightNav.fadeOut('fast');
+			
+			if(galW < galSW)
+				_startMenuClock();
+	
+			menuOpen = true;
+		}
 	}
 	
 	function closeMenu()
 	{
-		$tabs.animate({right: -1*openDistance}, 300, 'easeInOutCirc');
-		moveContainer('right');
-		$tabsnav.removeClass('selected');
-		$leftRightNav.fadeIn('fast');
-		
-		clearInterval(menuClock);
-
-		menuOpen = false;
+		if(menuOpen)
+		{
+			$tabs.animate({right: -1*openDistance}, 300, 'easeInOutCirc');
+			moveContainer('right');
+			$tabsnav.removeClass('selected');
+			$leftRightNav.fadeIn('fast');
+			
+			clearInterval(menuClock);
+	
+			menuOpen = false;
+		}
 	}
 	
 	function moveContainer(direction) 
